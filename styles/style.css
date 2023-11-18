@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(../fonts/ProximaNova-Regular.woff), url(../fonts/ProximaNova-Bold.woff), url(../fonts/ProximaNova-Extrabld.woff), url(../fonts/ProximaNova-Black.woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url(../fonts/ProximaNova-Bold.woff);
+  font-weight: 700;
+}
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.center {
+  padding-left: calc(50% - 663px);
+  padding-right: calc(50% - 663px);
+}
+
+.top {
+  background-color: #fff;
+  background-image: url(../img/main-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top__header {
+  padding-left: 87px;
+  padding-right: 87px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  margin-bottom: 129px;
+}
+.top__header--logo:hover {
+  cursor: pointer;
+}
+.top__header .navigation {
+  display: flex;
+  gap: 28px;
+}
+.top__header .navigation__item {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  transition: all 0.3s;
+}
+.top__header .navigation__item:hover {
+  cursor: pointer;
+  color: #ff8b00;
+}
+.top__header .active {
+  border-bottom: 3px solid #ff8b00;
+}
+.top__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 169px;
+  padding-right: 169px;
+}
+.top__content--text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.top__content--text .title {
+  font-family: "Proxima Nova Bold";
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.top__content--text .description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.top__form {
+  margin-top: 32px;
+}
+.top__scroller {
+  margin-top: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  padding-bottom: 50px;
+}
+.top__scroller--text {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.top__scroller--link {
+  height: 71px;
+  width: 62px;
+  background-image: url(../img/scroller-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button {
+  color: #fff;
+  background-color: #ff8b00;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 4px 41px 4px 41px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
