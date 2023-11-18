@@ -30,6 +30,7 @@ body {
 }
 
 .button {
+  font-family: "Proxima Nova Semibold";
   color: #fff;
   background-color: #ff8b00;
   border: none;
@@ -137,9 +138,20 @@ body {
 .top__scroller--link {
   height: 71px;
   width: 62px;
-  background-image: url(../img/scroller-button.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  transition: all 0.3s;
+}
+.top__scroller--link :hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.top__scroller--image {
+  height: 71px;
+  width: 62px;
+  transition: all 0.3s;
+}
+.top__scroller--image :hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .about {
@@ -299,4 +311,131 @@ body {
 }
 .spotlight__video--player {
   max-width: 724px;
+}
+
+.contact {
+  padding-top: 128px;
+  padding-bottom: 120px;
+  background-color: #232323;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.contact__heading {
+  font-family: "Proxima Nova Semibold";
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 63px;
+  z-index: 1;
+}
+.contact__content {
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  z-index: 1;
+}
+.contact__content--text {
+  font-family: "Proxima Nova Semibold";
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.contact__form--top {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__form .input-name {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.contact__form--input {
+  width: 308px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 13px 9px 13px 9px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 7px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #292929;
+  font-family: "Proxima Nova", sans-serif;
+}
+.contact__form--input::-moz-placeholder {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 7px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "Proxima Nova", sans-serif;
+}
+.contact__form--input::placeholder {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 7px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "Proxima Nova", sans-serif;
+}
+.contact__form .mail {
+  width: 640px;
+}
+.contact__form--textarea {
+  width: 640px;
+  height: 96px;
+  border: none;
+  outline: none;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 13px 9px 13px 9px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 7px;
+  text-align: left;
+  color: #292929;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.contact__form--textarea::-moz-placeholder {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 7px;
+  text-align: left;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+}
+.contact__form--textarea::placeholder {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 7px;
+  text-align: left;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+}
+.contact__form .send {
+  max-width: 201px;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

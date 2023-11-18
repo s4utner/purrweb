@@ -45,10 +45,10 @@
       </div>
       <div class="top__scroller">
         <p class="top__scroller--text">FIND OUT MORE</p>
-        <a class="top__scroller--link" href="#"></a>
+        <a class="top__scroller--link" href="#about"><img class="top__scroller--image" src="./img/scroller-button.svg" alt="scroller button"></a>
       </div>
     </section>
-    <section class="about center">
+    <section class="about center" id="about">
       <div class="about__item">
         <div class="about__item--number">126,300</div>
         <div class="about__item--text">
@@ -199,7 +199,57 @@
           src="./img/play-button.svg"
           alt="video play button"
         />
-        <video class="spotlight__video--player" src="./video/Apple Vision Pro - Reveal Trailer.mp4"></video>
+        <video
+          class="spotlight__video--player"
+          src="./video/Apple Vision Pro - Reveal Trailer.mp4"
+        ></video>
+      </div>
+    </section>
+    <section class="contact center">
+      <h3 class="contact__heading">
+        Ready <br />
+        to get started?
+      </h3>
+      <div class="contact__content">
+        <p class="contact__content--text">Contact us</p>
+        <form class="contact__form" action="#">
+          <div class="contact__form--top">
+            <div class="contact__form--name">
+              <p class="input-name">First Name</p>
+              <input
+                class="contact__form--input name"
+                placeholder="First Name"
+                type="text"
+              />
+            </div>
+            <div class="contact__form--surname">
+              <p class="input-name">Last Name</p>
+              <input
+                class="contact__form--input name"
+                placeholder="Last Name"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="contact__form--mail">
+            <p class="input-name">Email Address</p>
+            <input
+              class="contact__form--input mail"
+              placeholder="Email Address"
+              type="email"
+            />
+          </div>
+          <div class="contact__form--message">
+            <p class="input-name">Your message</p>
+            <textarea
+              placeholder="Your message"
+              class="contact__form--textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="button send">SEND</button>
+        </form>
       </div>
     </section>
   </body>
