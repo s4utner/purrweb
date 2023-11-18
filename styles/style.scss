@@ -5,9 +5,13 @@
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url(../fonts/ProximaNova-Regular.woff),
-    url(../fonts/ProximaNova-Bold.woff), url(../fonts/ProximaNova-Extrabld.woff),
-    url(../fonts/ProximaNova-Black.woff);
+  src: url(../fonts/ProximaNova-Regular.woff);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(../fonts/ProximaNova-Semibold.woff);
   font-weight: 400;
 }
 
@@ -66,6 +70,8 @@ body {
     margin-bottom: 129px;
 
     &--logo {
+      max-width: 78px;
+
       &:hover {
         cursor: pointer;
       }
@@ -107,7 +113,7 @@ body {
       gap: 12px;
 
       .title {
-        font-family: "Proxima Nova Bold";
+        font-family: "Proxima Nova Semibold";
         font-size: 55px;
         font-weight: 700;
         line-height: 55px;
@@ -174,6 +180,8 @@ body {
     width: 247px;
 
     &--number {
+      font-family: "Proxima Nova Semibold";
+
       color: #7050e5;
       font-size: 60px;
       font-weight: 700;
@@ -182,7 +190,8 @@ body {
     }
 
     &--text {
-      font-family: "Proxima Nova Bold";
+      font-family: "Proxima Nova Semibold";
+
       color: #7050e5;
       text-align: center;
       font-size: 16px;
@@ -191,4 +200,96 @@ body {
       text-align: center;
     }
   }
+}
+
+.specifications {
+  background-color: #f8f8f8;
+  padding-top: 145px;
+  padding-bottom: 120px;
+  padding-right: 160px;
+  padding-left: 160px;
+  position: relative;
+
+  &__heading {
+    font-family: "Proxima Nova Semibold";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #7050e5;
+    margin-bottom: 68px;
+    margin-right: 65px;
+  }
+
+  .container {
+    display: flex;
+    gap: 100px;
+    row-gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 281px;
+
+    &--img {
+      align-self: center;
+      margin-bottom: 28px;
+    }
+
+    &--title {
+      font-family: "Proxima Nova Semibold";
+      text-transform: uppercase;
+      color: #7050e5;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+
+    &--description {
+      color: #878787;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: -0.008em;
+      text-align: left;
+    }
+
+    .phone {
+      max-width: 142px;
+      margin-right: 50px;
+    }
+
+    .tablet {
+      max-width: 160px;
+    }
+
+    .laptop {
+      max-width: 150px;
+    }
+
+    .labyrinth {
+      max-width: 132px;
+    }
+
+    .harddrive {
+      max-width: 191px;
+    }
+
+    .cloud {
+      max-width: 210px;
+    }
+  }
+
+  &__angle-image {
+    position: absolute;
+    top: 110px;
+    right: 170px;
+  }
+
 }
