@@ -291,5 +291,56 @@ body {
     top: 110px;
     right: 170px;
   }
+}
 
+.spotlight {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 114px;
+  padding-bottom: 97px;
+  background-color: #fff;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+
+    &--heading {
+      font-family: "Proxima Nova Semibold";
+      color: #7050e5;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 55px;
+      text-align: left;
+      margin-top: 95px;
+      margin-bottom: 15px;
+    }
+
+    &--description {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      color: #878787;
+    }
+
+    &--form {
+      margin-top: 38px;
+    }
+  }
+
+  &__video {
+    position: relative;
+
+    &--button {
+      max-width: 77px;
+      position: absolute;
+      top: 160px;
+      left: 340px;
+    }
+
+    &--player {
+      max-width: 724px;
+    }
+  }
 }
