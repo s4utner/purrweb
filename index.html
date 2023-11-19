@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <section class="top center">
+    <section
+      class="top center"
+      id="top"
+      onmouseover="activateUpperSidescroller()"
+    >
       <header class="top__header">
-        <img class="top__header--logo" src="./img/Logo.svg" alt="logo" />
+        <a class="top__header--logo" href="#"></a>
         <nav class="navigation">
           <span class="navigation__item active">HOME</span>
           <span class="navigation__item">PRODUCTS</span>
@@ -68,7 +78,11 @@
         </div>
       </div>
     </section>
-    <section class="specifications center">
+    <section
+      class="specifications center"
+      id="specifications"
+      onmouseover="activateMiddleSidescroller()"
+    >
       <h2 class="specifications__heading">What We Do</h2>
       <img
         class="specifications__angle-image"
@@ -197,12 +211,17 @@
           alt="video play button"
         />
         <video
+          controls
           class="spotlight__video--player"
           src="./video/Apple Vision Pro - Reveal Trailer.mp4"
         ></video>
       </div>
     </section>
-    <section class="contact center">
+    <section
+      class="contact center"
+      id="contact"
+      onmouseover="activateLowerSidescroller()"
+    >
       <h3 class="contact__heading">
         Ready <br />
         to get started?
@@ -302,12 +321,12 @@
             />
             <p class="footer__category--name">Navigation</p>
           </div>
-          <p class="footer__item">Home</p>
-          <p class="footer__item">Products</p>
-          <p class="footer__item">Services</p>
-          <p class="footer__item">Resources</p>
-          <p class="footer__item">About</p>
-          <p class="footer__item">CONTACT US</p>
+          <a class="footer__item" href="#">Home</a>
+          <a class="footer__item" href="#">Products</a>
+          <a class="footer__item" href="#">Services</a>
+          <a class="footer__item" href="#">Resources</a>
+          <a class="footer__item" href="#">About</a>
+          <a class="footer__item" href="#">CONTACT US</a>
         </div>
         <div class="footer__categories">
           <div class="footer__category">
@@ -318,10 +337,10 @@
             />
             <p class="footer__category--name">LINKS</p>
           </div>
-          <p class="footer__item">Disclaimer</p>
-          <p class="footer__item">Legal</p>
-          <p class="footer__item">Environment Policy</p>
-          <p class="footer__item">Privacy</p>
+          <a class="footer__item" href="#">Disclaimer</a>
+          <a class="footer__item" href="#">Legal</a>
+          <a class="footer__item" href="#">Environment Policy</a>
+          <a class="footer__item" href="#">Privacy</a>
         </div>
         <div class="footer__categories">
           <div class="footer__category">
@@ -332,13 +351,14 @@
             />
             <p class="footer__category--name">contact sales</p>
           </div>
-          <p class="footer__item">
-            PHONE: <span class="footer__item--contact">+61 3 9614 4416</span>
-          </p>
-          <p class="footer__item">
-            EMAIL:
-            <span class="footer__item--contact">sales@saltgroup.com.au</span>
-          </p>
+          <span class="footer__contacts"
+            >PHONE:<a class="footer__item" href="#"> +61 3 9614 4416</a></span
+          >
+          <span class="footer__contacts"
+            >EMAIL:<a class="footer__item" href="#">
+              sales@saltgroup.com.au</a
+            ></span
+          >
         </div>
       </div>
       <a class="footer__logo" href="#"
@@ -346,7 +366,20 @@
       /></a>
     </footer>
     <div class="bar">
-      © 2017 SALT GROUP <span><img class="bar__figure" src="./img/footer-figure.svg" alt="footer figure"></span> ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.
+      © 2017 SALT GROUP
+      <span
+        ><img
+          class="bar__figure"
+          src="./img/footer-figure.svg"
+          alt="footer figure"
+      /></span>
+      ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.
     </div>
+    <div class="sidescroller">
+      <a class="sidescroller--item upper active-sidescroller" href="#top"></a>
+      <a class="sidescroller--item middle" href="#specifications"></a>
+      <a class="sidescroller--item lower" href="#contact"></a>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
