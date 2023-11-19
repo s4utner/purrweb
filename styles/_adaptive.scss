@@ -1,0 +1,311 @@
+@media (max-width: 1439px) {
+  .spotlight__video {
+    padding-right: 23px;
+    &--button {
+      top: 70px;
+      left: 180px;
+    }
+
+    &--player {
+      width: 400px;
+    }
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 260px;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    padding-bottom: 80px;
+
+    .news-feed {
+      width: 300px;
+      padding: 0;
+
+      &__text {
+        width: 240px;
+      }
+    }
+
+    &__content {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 0;
+      max-width: 300px;
+      gap: 48px;
+    }
+
+    &__nav,
+    &__links {
+      max-width: 110px;
+    }
+
+    &__contact {
+      align-self: center;
+    }
+
+    &__logo {
+      margin-top: 20px;
+      position: static;
+      width: 88px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .center {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .top {
+    &__header {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 55px;
+
+      &--logo {
+        width: 39px;
+        height: 50px;
+      }
+
+      .navigation {
+        display: none;
+
+        &__mobile {
+          display: block;
+        }
+      }
+    }
+
+    &__content {
+      flex-direction: column-reverse;
+      padding-left: 0;
+      padding-right: 0;
+      gap: 64px;
+
+      &--text {
+        gap: 16px;
+
+        .title {
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 40px;
+          text-align: left;
+        }
+
+        .description {
+          width: 319px;
+          line-height: 20px;
+        }
+      }
+
+      .twitter-logo {
+        width: 100px;
+      }
+    }
+
+    &__form {
+      margin-top: 12px;
+    }
+
+    &__scroller {
+      margin-top: 68px;
+
+      &--text {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .about {
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    &__item--number {
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    &__item--text {
+      font-size: 13px;
+      line-height: 16px;
+      font-family: "Proxima Nova Semibold";
+    }
+  }
+
+  .specifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 62px;
+    padding-bottom: 48px;
+
+    &__heading {
+      margin-right: 0;
+      margin-bottom: 40px;
+      font-size: 34px;
+    }
+
+    &__angle-image {
+      top: 48px;
+      right: 40px;
+    }
+
+    .container {
+      gap: 60px;
+    }
+  }
+
+  .spotlight {
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 181px;
+
+    &__info {
+      padding: 0;
+      align-items: center;
+
+      &--heading {
+        margin-top: 0;
+        font-size: 24px;
+        line-height: 32px;
+        align-self: baseline;
+      }
+
+      &--description {
+        padding-bottom: 28px;
+      }
+
+      &--form {
+        position: absolute;
+        bottom: 97px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+      }
+    }
+
+    &__video {
+      width: 319px;
+      padding: 0;
+
+      &--button {
+        top: 50px;
+        left: 125px;
+      }
+
+      &--player {
+        width: 319px;
+      }
+    }
+  }
+
+  .contact {
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__heading {
+      padding-left: 0;
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    &__content {
+      padding: 0;
+      align-items: center;
+
+      &--text {
+        align-self: start;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    &__form {
+      align-items: center;
+
+      &--top {
+        flex-direction: column;
+        gap: 20px;
+      }
+      &--input {
+        max-width: 311px;
+      }
+
+      &--textarea {
+        max-width: 311px;
+      }
+    }
+
+    .send {
+      width: 171px;
+    }
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 260px;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    padding-bottom: 80px;
+
+    .news-feed {
+      width: 300px;
+      padding: 0;
+
+      &__text {
+        width: 240px;
+      }
+    }
+
+    &__content {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 0;
+      max-width: 300px;
+      gap: 48px;
+    }
+
+    &__nav,
+    &__links {
+      max-width: 110px;
+    }
+
+    &__contact {
+      align-self: center;
+    }
+
+    &__logo {
+      margin-top: 20px;
+      position: static;
+      width: 88px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .bar {
+    font-family: "Raleway", sans-serif;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    color: #878787;
+  }
+
+  .sidescroller {
+    display: none;
+  }
+}
