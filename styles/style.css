@@ -92,6 +92,9 @@ body {
   cursor: pointer;
   color: #ff8b00;
 }
+.top__header .navigation__mobile {
+  display: none;
+}
 .top__header .active {
   border-bottom: 3px solid #ff8b00;
 }
@@ -650,4 +653,201 @@ body {
   background-repeat: no-repeat;
   width: 19px;
   height: 22px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .top__header {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 55px;
+  }
+  .top__header--logo {
+    width: 39px;
+    height: 50px;
+  }
+  .top__header .navigation {
+    display: none;
+  }
+  .top__header .navigation__mobile {
+    display: block;
+  }
+  .top__content {
+    flex-direction: column-reverse;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 64px;
+  }
+  .top__content--text {
+    gap: 16px;
+  }
+  .top__content--text .title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+  }
+  .top__content--text .description {
+    width: 319px;
+    line-height: 20px;
+  }
+  .top__content .twitter-logo {
+    width: 100px;
+  }
+  .top__form {
+    margin-top: 12px;
+  }
+  .top__scroller {
+    margin-top: 68px;
+  }
+  .top__scroller--text {
+    font-size: 13px;
+  }
+  .about {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .about__item--number {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .about__item--text {
+    font-size: 13px;
+    line-height: 16px;
+    font-family: "Proxima Nova Semibold";
+  }
+  .specifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 62px;
+    padding-bottom: 48px;
+  }
+  .specifications__heading {
+    margin-right: 0;
+    margin-bottom: 40px;
+    font-size: 34px;
+  }
+  .specifications__angle-image {
+    top: 48px;
+    right: 40px;
+  }
+  .specifications .container {
+    gap: 60px;
+  }
+  .spotlight {
+    position: relative;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 181px;
+  }
+  .spotlight__info {
+    padding: 0;
+    align-items: center;
+  }
+  .spotlight__info--heading {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 32px;
+    align-self: baseline;
+  }
+  .spotlight__info--description {
+    padding-bottom: 28px;
+  }
+  .spotlight__info--form {
+    position: absolute;
+    bottom: 97px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .spotlight__video--player {
+    width: 319px;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contact__heading {
+    padding-left: 0;
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .contact__content {
+    padding: 0;
+    align-items: center;
+  }
+  .contact__content--text {
+    align-self: start;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .contact__form {
+    align-items: center;
+  }
+  .contact__form--top {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact__form--input {
+    max-width: 311px;
+  }
+  .contact__form--textarea {
+    max-width: 311px;
+  }
+  .contact .send {
+    width: 171px;
+  }
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 260px;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+  .footer .news-feed {
+    width: 300px;
+    padding: 0;
+  }
+  .footer .news-feed__text {
+    width: 240px;
+  }
+  .footer__content {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    max-width: 300px;
+    gap: 48px;
+  }
+  .footer__nav, .footer__links {
+    max-width: 110px;
+  }
+  .footer__contact {
+    align-self: center;
+  }
+  .footer__logo {
+    margin-top: 20px;
+    position: static;
+    width: 88px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .bar {
+    font-family: "Raleway", sans-serif;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    color: #878787;
+  }
+  .sidescroller {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
