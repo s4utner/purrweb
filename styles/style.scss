@@ -315,6 +315,7 @@ body {
 }
 
 .spotlight {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   padding-top: 114px;
@@ -719,4 +720,5 @@ body {
   }
 }
 
+@import "adaptive";
 @import "mobile";

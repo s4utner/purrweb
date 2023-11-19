@@ -1,4 +1,62 @@
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
+  .spotlight__video {
+    padding-right: 23px;
+    &--button {
+      top: 70px;
+      left: 180px;
+    }
+
+    &--player {
+      width: 400px;
+    }
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 260px;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    padding-bottom: 80px;
+
+    .news-feed {
+      width: 300px;
+      padding: 0;
+
+      &__text {
+        width: 240px;
+      }
+    }
+
+    &__content {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 0;
+      max-width: 300px;
+      gap: 48px;
+    }
+
+    &__nav,
+    &__links {
+      max-width: 110px;
+    }
+
+    &__contact {
+      align-self: center;
+    }
+
+    &__logo {
+      margin-top: 20px;
+      position: static;
+      width: 88px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
   .center {
     padding-left: 28px;
     padding-right: 28px;
@@ -104,6 +162,7 @@
   }
 
   .spotlight {
+    justify-content: center;
     position: relative;
     flex-wrap: wrap;
     padding-top: 100px;
@@ -135,6 +194,7 @@
 
     &__video {
       width: 319px;
+      padding: 0;
 
       &--button {
         top: 50px;
@@ -148,6 +208,7 @@
   }
 
   .contact {
+    align-items: center;
     flex-direction: column;
     gap: 48px;
     padding-top: 40px;

@@ -58,7 +58,11 @@
         /></a>
       </div>
     </section>
-    <section class="about center" id="about">
+    <section
+      class="about center"
+      id="about"
+      onmouseover="activateUpperSidescroller()"
+    >
       <div class="about__item">
         <div class="about__item--number">126,300</div>
         <div class="about__item--text">
@@ -193,7 +197,10 @@
         </div>
       </div>
     </section>
-    <section class="spotlight center">
+    <section
+      class="spotlight center"
+      onmouseover="activateMiddleSidescroller()"
+    >
       <div class="spotlight__info">
         <h3 class="spotlight__info--heading">Product Spotlight</h3>
         <p class="spotlight__info--description">
@@ -271,8 +278,8 @@
         </form>
       </div>
     </section>
-    <div class="white-line"></div>
-    <footer class="footer center">
+    <div class="white-line" onmouseover="activateLowerSidescroller()"></div>
+    <footer class="footer center" onmouseover="activateLowerSidescroller()">
       <div class="news-feed">
         <div class="news-feed__top">
           <a class="news-feed__logo--link" href="#"
@@ -306,9 +313,11 @@
             <p class="news-feed__content--time">12 June 2016</p>
           </div>
           <div class="news-feed__content--item last">
-            <p class="news-feed__content--text">Our new nest.</p>
-            <a class="news-feed__content--link" href="#"
-              >http://testing123.com.au</a
+            <span class="news-feed__content--text"
+              >Our new nest.
+              <a class="news-feed__content--link" href="#"
+                >http://testing123.com.au</a
+              ></span
             >
             <p class="news-feed__content--time">11 June 2016</p>
           </div>
@@ -368,7 +377,7 @@
         ><img src="./img/footer-logo.svg" alt="footer logo"
       /></a>
     </footer>
-    <div class="bar">
+    <div class="bar" onmouseover="activateLowerSidescroller()">
       © 2017 SALT GROUP
       <span
         ><img
