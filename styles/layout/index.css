@@ -235,7 +235,7 @@ button:focus {
 }
 
 .how-works__first-line {
-  animation: slide-right 10s linear infinite both;
+  animation: slide-right-first 10s linear infinite both;
 }
 
 .how-works__second-line {
@@ -243,10 +243,10 @@ button:focus {
 }
 
 .how-works__third-line {
-  animation: slide-right 10s linear infinite both;
+  animation: slide-right-third 10s linear infinite both;
 }
 
-@keyframes slide-right {
+@keyframes slide-right-first {
   0% {
     transform: translateX(-2220px);
   }
@@ -260,7 +260,16 @@ button:focus {
     transform: translateX(2290px);
   }
   100% {
-    transform: translateX(-2370px);
+    transform: translateX(-2970px);
+  }
+}
+
+@keyframes slide-right-third {
+  0% {
+    transform: translateX(-2950px);
+  }
+  100% {
+    transform: translateX(2250px);
   }
 }
 
