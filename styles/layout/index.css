@@ -121,3 +121,59 @@ a {
   bottom: 0;
   right: 0;
 }
+
+.about {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.about__content {
+  padding-left: 60px;
+  padding-top: 100px;
+}
+
+.about__description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.about__description--text {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  max-width: 397px;
+}
+
+.about__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 70px;
+  padding-right: 125px;
+  padding-bottom: 36px;
+}
+
+.features__item {
+  max-width: 336px;
+}
+
+.features__item--heading {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 51px;
+}
+
+.features__item--description {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.about__description--image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
