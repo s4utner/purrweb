@@ -213,6 +213,36 @@ button:focus {
   line-height: 136px;
 }
 
+.how-works__first-line {
+  animation: slide-right 10s linear infinite both;
+}
+
+.how-works__second-line {
+  animation: slide-left 10s linear infinite both;
+}
+
+.how-works__third-line {
+  animation: slide-right 10s linear infinite both;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-2220px);
+  }
+  100% {
+    transform: translateX(2250px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(2290px);
+  }
+  100% {
+    transform: translateX(-2370px);
+  }
+}
+
 .text-green {
   color: #2fdbbc;
 }
