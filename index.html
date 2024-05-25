@@ -14,25 +14,45 @@
     <link rel="stylesheet" href="./styles/layout/index.css" />
   </head>
   <body>
-    <section class="top-bar">
-        <div class="tabs">
-            <div class="tab__container tab__container--active">
-                <a href="#" class="tab__container--item">For Business</a>
-            </div>
-            <div class="tab__container">
-                <a href="#" class="tab__container--item">For Customers</a>
-            </div>
-        </div>
-    </section>
     <header class="header">
-        <nav class="navigation">
-            <a href="#" class="navigation__logo">
-                <img src="./img/layout/budss-logo.svg" alt="budss logo">
-            </a>
-            <button class="contact-button">Contact sales</button>
-        </nav>
-    </header>
+      <div class="container">
+        <div class="header__tabs">
+          <div class="header__tabs--container tabs__container--active">
+            <a href="#" class="header__tabs--item tabs__item--active"
+              >For Business</a
+            >
+          </div>
+          <div class="header__tabs--container">
+            <a href="#" class="header__tabs--item">For Customers</a>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="header__navigation">
+        <a href="#" class="header__logo">
+          <img src="./img/layout/budss-logo.svg" alt="budss logo" />
+        </a>
+        <button class="contact-button">Contact sales</button>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="title">
+            Everyone <br />
+            is an Influencer
+          </h1>
+          <p class="hero__content--text">
+            Budss is a payments as a service and WOM engine dedicated to
+            acquisition and retention of customers to your business.
+          </p>
+          <button class="contact-button">Contact sales</button>
+          <img
+            class="hero__content--image"
+            src="./img/layout/budss-hero.svg"
+            alt="budss hero image"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

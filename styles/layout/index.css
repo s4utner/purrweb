@@ -19,64 +19,105 @@ a {
   font-size: 16px;
 }
 
-.top-bar {
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 1440px;
+  position: relative;
+}
+
+.header__tabs {
   background-color: #ffaa4c;
   height: 38px;
+  padding-left: 60px;
   display: flex;
-  justify-content: center;
 }
 
-.tabs {
-  height: 100%;
-  margin-left: 60px;
-  display: flex;
-  width: 1440px;
-}
-
-.tab__container {
+.header__tabs--container {
   width: 168px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.tab__container--active {
+.tabs__container--active {
   border-radius: 20px 20px 0 0;
   background-color: #181818;
 }
 
-.tabs__item {
-  width: 168px;
-  background-color: #181818;
-  height: 100%;
+.header__tabs--item {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
+.tabs__item--active {
+  color: #ffffff;
 }
 
-.navigation {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.header__navigation {
+  padding: 10px 60px;
+  box-sizing: border-box;
   width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navigation__logo {
-  margin-left: 60px;
-}
-
 .contact-button {
-  margin-right: 60px;
-  padding: 16px 30px;
+  padding: 14px 28px;
   background-color: #954ced;
-  border: none;
+  border: 2px solid #954ced;
   border-radius: 16px;
   color: #ffffff;
   font-family: inherit;
   font-weight: 600px;
   font-size: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+  background-color: #181818;
+  border: 2px solid #954ced;
+}
+
+.contact-button:focus {
+  border: 2px solid #ba8bf3;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__content {
+  margin-top: 82px;
+  margin-left: 110px;
+  padding-bottom: 140px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 102px;
+}
+
+.hero__content--text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 534px;
+}
+
+.hero__content--image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
