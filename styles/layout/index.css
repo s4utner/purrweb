@@ -72,6 +72,11 @@ a {
   align-items: center;
 }
 
+.header__navigation--fixed {
+  position: fixed;
+  top: 0;
+}
+
 button {
   padding: 14px 28px;
   background-color: #954ced;
