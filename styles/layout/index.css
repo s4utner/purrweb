@@ -444,33 +444,93 @@ a {
 }
 
 .facebook-logo {
-    position: absolute;
-    right: 435px;
-    top: 45px;
+  position: absolute;
+  right: 435px;
+  top: 45px;
 }
 
 .twitter-logo {
-    position: absolute;
-    right: 305px;
-    top: 137px;
+  position: absolute;
+  right: 305px;
+  top: 137px;
 }
 
 .instagram-logo {
-    position: absolute;
-    right: 175px;
-    top: 45px;
+  position: absolute;
+  right: 175px;
+  top: 45px;
 }
 
 .tiktok-logo {
-    position: absolute;
-    right: 45px;
-    top: 137px;
+  position: absolute;
+  right: 45px;
+  top: 137px;
 }
 
 .partners {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1320px;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1320px;
+  margin-bottom: 100px;
+}
+
+.footer {
+  height: 188px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #444444;
+}
+
+.footer__tabs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 100px;
+}
+
+.footer__tab {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.app-stores {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer__bottom--copyright {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #b9b9b9;
+}
+
+.footer__bottom--links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #b9b9b9;
+  text-decoration: underline;
 }
