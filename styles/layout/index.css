@@ -31,9 +31,9 @@ a {
 }
 
 .header__tabs {
+  width: 100%;
   background-color: #ffaa4c;
   height: 38px;
-  padding-left: 60px;
   display: flex;
 }
 
@@ -42,6 +42,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header__tabs--container:first-child {
+  margin-left: 60px;
 }
 
 .tabs__container--active {
@@ -62,7 +66,7 @@ a {
 .header__navigation {
   padding: 10px 60px;
   box-sizing: border-box;
-  width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,8 +101,8 @@ button:focus {
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .hero__content {
@@ -128,8 +132,6 @@ button:focus {
 }
 
 .about {
-  display: flex;
-  justify-content: center;
   position: relative;
 }
 
@@ -190,14 +192,8 @@ button:focus {
   left: 0;
 }
 
-.how-works {
-  display: flex;
-  justify-content: center;
-}
 .how-works__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   position: relative;
 }
 
@@ -236,8 +232,11 @@ button:focus {
 
 .how-works__phone {
   position: absolute;
-  align-self: center;
-  justify-self: center;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .why-budss {
@@ -246,6 +245,7 @@ button:focus {
 }
 
 .statistics {
+  width: 100%;
   height: 222px;
   display: flex;
   align-items: center;
@@ -296,7 +296,7 @@ button:focus {
 
 .why-budss__content--decription-background {
   position: absolute;
-  top: 455px;
+  top: 235px;
   z-index: -1;
 }
 
@@ -506,6 +506,11 @@ button:focus {
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
+  transition: all 0.3s;
+}
+
+.footer__tab:hover {
+  color: #a64ced;
 }
 
 .app-stores {
@@ -532,10 +537,15 @@ button:focus {
   gap: 20px;
 }
 
-.footer-links {
+.footer-link {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
   color: #b9b9b9;
   text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffffff;
 }
