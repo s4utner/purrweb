@@ -79,6 +79,14 @@ a {
   top: 0;
 }
 
+.header__navigation-burger {
+  display: none;
+}
+
+.budss-logo__top--mobile {
+  display: none;
+}
+
 button {
   padding: 14px 28px;
   background-color: #954ced;
@@ -146,7 +154,7 @@ button:focus {
   max-width: 534px;
 }
 
-.hero__content--image {
+.hero__content-image {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -532,8 +540,16 @@ button:focus {
   top: 137px;
 }
 
+.facebook-logo-mobile,
+.twitter-logo-mobile,
+.instagram-logo-mobile,
+.tiktok-logo-mobile {
+  display: none;
+}
+
 .partners {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 1320px;
@@ -567,6 +583,10 @@ button:focus {
   font-size: 20px;
   line-height: 25px;
   transition: all 0.3s;
+}
+
+.footer__tab--mobile {
+  display: none;
 }
 
 .app-stores {

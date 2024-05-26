@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/layout/index.css" />
+    <link rel="stylesheet" href="./styles/layout/mobile.css" />
   </head>
   <body>
     <header class="header">
@@ -27,9 +28,23 @@
       </nav>
       <div class="header__navigation">
         <a href="#" class="header__logo">
-          <img src="./img/layout/budss-logo.svg" alt="budss logo" />
+          <img
+            class="budss-logo__top--desktop"
+            src="./img/layout/budss-logo.svg"
+            alt="budss logo"
+          />
+          <img
+            class="budss-logo__top--mobile"
+            src="./img/layout/budss-logo-mobile.svg"
+            alt="budss logo"
+          />
         </a>
-        <button class="contact-button">Contact sales</button>
+        <button class="contact-button header__navigation-button">
+          Contact sales
+        </button>
+        <button class="header__navigation-burger">
+          <img src="./img/layout/Burger.svg" alt="burger menu" />
+        </button>
       </div>
     </header>
     <section class="hero">
@@ -44,7 +59,7 @@
         </p>
         <button class="contact-button">Contact sales</button>
         <img
-          class="hero__content--image"
+          class="hero__content-image"
           src="./img/layout/budss-hero.svg"
           alt="budss hero image"
         />
@@ -153,21 +168,21 @@
       <div class="statistics__item">
         <p class="statistics__item--amount">15%</p>
         <p class="statistics__item--description">
-          Increase <br />
+          Increase <br class="space-desktop" />
           in Purchase Amount
         </p>
       </div>
       <div class="statistics__item">
         <p class="statistics__item--amount">30%</p>
         <p class="statistics__item--description">
-          Growth <br />
+          Growth <br class="space-desktop" />
           in Annual Sales
         </p>
       </div>
       <div class="statistics__item">
         <p class="statistics__item--amount">10%</p>
         <p class="statistics__item--description">
-          Growth in New <br />
+          Growth in New <br class="space-desktop" />
           Customers
         </p>
       </div>
@@ -187,9 +202,17 @@
           />
           <div class="why-budss__content--benefits">
             <div class="benefits__first-line">
-              <div class="benefits__item benefits__item--big">
+              <div
+                class="benefits__item benefits__item--big benefits__item--phone"
+              >
                 <img
+                  class="mobile-phone-desktop"
                   src="./img/layout/benefits-mobile.svg"
+                  alt="benefits mobile image"
+                />
+                <img
+                  class="phone-mobile"
+                  src="./img/layout/phone-mobile.svg"
                   alt="benefits mobile image"
                 />
                 <div class="benefits__text-container">
@@ -202,7 +225,9 @@
                   </p>
                 </div>
               </div>
-              <div class="benefits__item benefits__item--small">
+              <div
+                class="benefits__item benefits__item--small benefits__item--packages"
+              >
                 <img
                   class="purple-package"
                   src="./img/layout/purple-package.svg"
@@ -231,7 +256,9 @@
               </div>
             </div>
             <div class="benefits__second-line">
-              <div class="benefits__item benefits__item--small">
+              <div
+                class="benefits__item benefits__item--small benefits__item--like"
+              >
                 <img
                   class="green-like"
                   src="./img/layout/why-like.svg"
@@ -247,7 +274,9 @@
                   </p>
                 </div>
               </div>
-              <div class="benefits__item benefits__item--big">
+              <div
+                class="benefits__item benefits__item--big benefits__item--purple"
+              >
                 <img
                   class="purple-person"
                   src="./img/layout/purple-person.svg"
@@ -287,31 +316,43 @@
             <a href="#" class="facebook-logo">
               <img src="./img/layout/facebook.svg" alt="facebook logo" />
             </a>
+            <a href="#" class="facebook-logo-mobile">
+              <img src="./img/layout/facebook-mobile.svg" alt="facebook logo" />
+            </a>
             <a href="#" class="twitter-logo">
               <img src="./img/layout/twitter.svg" alt="twitter logo" />
+            </a>
+            <a href="#" class="twitter-logo-mobile">
+              <img src="./img/layout/twitter-mobile.svg" alt="twitter logo" />
             </a>
             <a href="#" class="instagram-logo">
               <img src="./img/layout/instagram.svg" alt="instagram logo" />
             </a>
+            <a href="#" class="instagram-logo-mobile">
+              <img src="./img/layout/inst-mobile.svg" alt="instagram logo" />
+            </a>
             <a href="#" class="tiktok-logo">
               <img src="./img/layout/tik-tok.svg" alt="tik tok logo" />
+            </a>
+            <a href="#" class="tiktok-logo-mobile">
+              <img src="./img/layout/tik-tok-mobile.svg" alt="tik tok logo" />
             </a>
           </div>
           <div class="partners">
             <a href="#"
-              ><img src="./img/layout/woo.svg" alt="woo commerce logo"
+              ><img class="woo-commerce" src="./img/layout/woo.svg" alt="woo commerce logo"
             /></a>
             <a href="#">
-              <img src="./img/layout/shopify.svg" alt="shopify logo" />
+              <img class="shopify" src="./img/layout/shopify.svg" alt="shopify logo" />
             </a>
             <a href="#">
-              <img src="./img/layout/square.svg" alt="square logo" />
+              <img class="square" src="./img/layout/square.svg" alt="square logo" />
             </a>
             <a href="#">
-              <img src="./img/layout/square-space.svg" alt="squarespace logo" />
+              <img class="squarespace" src="./img/layout/square-space.svg" alt="squarespace logo" />
             </a>
             <a href="#">
-              <img src="./img/layout/clover.svg" alt="clover logo" />
+              <img class="clover" src="./img/layout/clover.svg" alt="clover logo" />
             </a>
           </div>
         </div>
@@ -320,11 +361,14 @@
     <footer class="footer">
       <div class="footer__top">
         <a href="#"
-          ><img src="./img/layout/budss-footer-logo.svg" alt="budss logo"
+          ><img class="footer-budss-logo" src="./img/layout/budss-footer-logo.svg" alt="budss logo"
         /></a>
         <nav class="footer__tabs">
           <a class="footer__tab" href="#">For Business</a>
           <a class="footer__tab" href="#">For Customers</a>
+          <a class="footer__tab footer__tab--mobile" href="#">Privacy Policy</a>
+          <a class="footer__tab footer__tab--mobile" href="#">Terms Of Use - Seller</a>
+          <a class="footer__tab footer__tab--mobile" href="#">Terms of Use - Sellers & Customers</a>
         </nav>
         <button class="contact-button">Contact sales</button>
         <div class="app-stores">
@@ -381,7 +425,9 @@
             placeholder="Enter name"
             value=""
           />
-          <p class="input-error name-error hide-element">This field is required.</p>
+          <p class="input-error name-error hide-element">
+            This field is required.
+          </p>
         </div>
         <div class="contact-modal__container">
           <p class="contact-modal__input--name">
@@ -393,7 +439,9 @@
             placeholder="Enter email"
             value=""
           />
-          <p class="input-error email-error hide-element">This field is required.</p>
+          <p class="input-error email-error hide-element">
+            This field is required.
+          </p>
         </div>
         <div class="contact-modal__container">
           <p class="contact-modal__input--name">
@@ -405,7 +453,9 @@
             placeholder="+ 1 900 000 00 00 "
             value=""
           />
-          <p class="input-error tel-error hide-element">This field is required.</p>
+          <p class="input-error tel-error hide-element">
+            This field is required.
+          </p>
           <img
             class="contact-modal__input--flag"
             src="./img/layout/united-states-of-america.svg"
@@ -428,7 +478,9 @@
             placeholder="Enter Website/Store URL"
           />
         </div>
-        <p class="contact-modal__text--requirment hide-element">Please fill in all required fields</p>
+        <p class="contact-modal__text--requirment hide-element">
+          Please fill in all required fields
+        </p>
         <p class="contact-modal__text">
           By submitting this form you are agreeing to Budss's
           <a href="#" class="contact-modal__link">Privacy Policy</a>
