@@ -421,7 +421,6 @@
   }
 
   .cookies-modal {
-    position: fixed;
     bottom: 30px;
     left: 20px;
   }
@@ -443,6 +442,19 @@
   .cookies-modal__buttons {
     flex-direction: column;
     margin: 0;
+  }
+
+  .success-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+    margin: 0 20px;
+  }
+
+  .success-modal__text {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 295px;
   }
 }
 
