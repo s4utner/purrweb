@@ -29,7 +29,7 @@
         <a href="#" class="header__logo">
           <img src="./img/layout/budss-logo.svg" alt="budss logo" />
         </a>
-        <button>Contact sales</button>
+        <button class="contact-button">Contact sales</button>
       </div>
     </header>
     <section class="hero">
@@ -42,7 +42,7 @@
           Budss is a payments as a service and WOM engine dedicated to
           acquisition and retention of customers to your business.
         </p>
-        <button>Contact sales</button>
+        <button class="contact-button">Contact sales</button>
         <img
           class="hero__content--image"
           src="./img/layout/budss-hero.svg"
@@ -274,7 +274,7 @@
         <div class="contact__content">
           <div class="contact__block">
             <h4 class="contact__block--heading">Let Your Business Grow</h4>
-            <button class="contact-button">Contact sales</button>
+            <button class="light-button contact-button">Contact sales</button>
           </div>
           <div class="contact__networks">
             <p class="contact__networks--heading">
@@ -326,7 +326,7 @@
           <a class="footer__tab" href="#">For Business</a>
           <a class="footer__tab" href="#">For Customers</a>
         </nav>
-        <button>Contact sales</button>
+        <button class="contact-button">Contact sales</button>
         <div class="app-stores">
           <a href="#"
             ><img src="./img/layout/appstore.svg" alt="app store logo"
@@ -347,6 +347,104 @@
         </div>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <div class="cookies-modal">
+      <div class="cookies-modal__content">
+        <p class="cookies-modal__text">
+          This website uses cookies to ensure you get the best experience on our
+          website. They also allow us to analyze user behavior in order to
+          constantly improve the website for you.
+        </p>
+        <div class="cookies-modal__buttons">
+          <button class="cookies-modal__button cookies-modal__buttons--accept">
+            Accept
+          </button>
+          <button class="cookies-modal__button cookies-modal__buttons--decline">
+            Decline
+          </button>
+        </div>
+        <img
+          class="cookies-modal__button cookies-modal__icon"
+          src="./img/layout/esc-icon.svg"
+          alt="escape icon"
+        />
+      </div>
+    </div>
+    <div class="contact-modal__background hide-element">
+      <div class="contact-modal">
+        <div class="contact-modal__container">
+          <p class="contact-modal__input--name">
+            Name <span class="required">*</span>
+          </p>
+          <input
+            class="contact-modal__input name-input required-value"
+            type="text"
+            placeholder="Enter name"
+            value=""
+          />
+          <p class="input-error name-error hide-element">This field is required.</p>
+        </div>
+        <div class="contact-modal__container">
+          <p class="contact-modal__input--name">
+            Email <span class="required">*</span>
+          </p>
+          <input
+            class="contact-modal__input email-input required-value"
+            type="email"
+            placeholder="Enter email"
+            value=""
+          />
+          <p class="input-error email-error hide-element">This field is required.</p>
+        </div>
+        <div class="contact-modal__container">
+          <p class="contact-modal__input--name">
+            Phone number <span class="required">*</span>
+          </p>
+          <input
+            class="contact-modal__input tel-input required-value"
+            type="tel"
+            placeholder="+ 1 900 000 00 00 "
+            value=""
+          />
+          <p class="input-error tel-error hide-element">This field is required.</p>
+          <img
+            class="contact-modal__input--flag"
+            src="./img/layout/united-states-of-america.svg"
+            alt="united states of america"
+          />
+        </div>
+        <div class="contact-modal__container">
+          <p class="contact-modal__input--name">Company</p>
+          <input
+            class="contact-modal__input"
+            type="text"
+            placeholder="Enter company"
+          />
+        </div>
+        <div class="contact-modal__container">
+          <p class="contact-modal__input--name">Website/Store URL</p>
+          <input
+            class="contact-modal__input"
+            type="text"
+            placeholder="Enter Website/Store URL"
+          />
+        </div>
+        <p class="contact-modal__text--requirment hide-element">Please fill in all required fields</p>
+        <p class="contact-modal__text">
+          By submitting this form you are agreeing to Budss's
+          <a href="#" class="contact-modal__link">Privacy Policy</a>
+          and
+          <a href="#" class="contact-modal__link">Terms of Use</a>
+        </p>
+        <button class="contact-modal__button">Contact sales</button>
+        <img
+          class="contact-modal__icon"
+          src="./img/layout/esc-icon.svg"
+          alt="escape icon"
+        />
+      </div>
+    </div>
+    <script src="./scripts/layout/fixHeaderOnTop.js"></script>
+    <script src="./scripts/layout/cookiesModal.js"></script>
+    <script src="./scripts/layout/contactModal.js"></script>
   </body>
 </html>
