@@ -451,3 +451,30 @@
     top: 202px;
   }
 }
+
+@media (max-width: 374px) {
+  .cookies-modal__content {
+    width: 240px;
+    margin: 0;
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: normal;
+    gap: 40px;
+    max-width: none;
+  }
+
+  .facebook-logo-mobile {
+    top: 260px;
+  }
+  .twitter-logo-mobile {
+    left: 75px;
+    top: 320px;
+  }
+  .instagram-logo-mobile {
+    right: 75px;
+    top: 260px;
+  }
+  .tiktok-logo-mobile {
+    top: 320px;
+  }
+}
