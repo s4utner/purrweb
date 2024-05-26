@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1330px) {
   .header__tabs--container:first-child {
     margin: 0;
   }
@@ -37,7 +37,9 @@
   .hero__content {
     display: flex;
     flex-direction: column;
-    margin: 0 16px;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-top: 51px;
     padding-bottom: 396px;
     position: relative;
@@ -165,7 +167,7 @@
 
   .why-budss__content--decription-background {
     width: 244px;
-    top: 202px;
+    top: 174px;
   }
 
   .why-budss__content--benefits {
@@ -404,5 +406,11 @@
 
   .footer__bottom--copyright {
     line-height: 21px;
+  }
+}
+
+@media (max-width: 441px) {
+  .why-budss__content--decription-background {
+    top: 202px;
   }
 }
