@@ -30,6 +30,11 @@
     border: none;
   }
 
+  .header__navigation-burger:focus {
+    transform: none;
+    border: none;
+  }
+
   .header__navigation-burger:hover {
     transform: none;
   }
@@ -406,6 +411,38 @@
 
   .footer__bottom--copyright {
     line-height: 21px;
+  }
+
+  .contact-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+    margin: 0 20px;
+  }
+
+  .cookies-modal {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+  }
+
+  .cookies-modal__content {
+    width: 295px;
+    margin: 0;
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: normal;
+    gap: 40px;
+    max-width: none;
+  }
+
+  .cookies-modal__text {
+    max-width: 295px;
+  }
+
+  .cookies-modal__buttons {
+    flex-direction: column;
+    margin: 0;
   }
 }
 
