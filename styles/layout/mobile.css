@@ -1,0 +1,492 @@
+@media (max-width: 1330px) {
+  .header__tabs--container:first-child {
+    margin: 0;
+  }
+
+  .container {
+    width: fit-content;
+  }
+
+  .header__navigation {
+    padding: 10px 16px;
+  }
+
+  .budss-logo__top--desktop {
+    display: none;
+  }
+
+  .budss-logo__top--mobile {
+    display: block;
+  }
+
+  .header__navigation-button {
+    display: none;
+  }
+
+  .header__navigation-burger {
+    padding: 0;
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  .header__navigation-burger:focus {
+    transform: none;
+    border: none;
+  }
+
+  .header__navigation-burger:hover {
+    transform: none;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 51px;
+    padding-bottom: 396px;
+    position: relative;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .hero__content--text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .hero__content-image {
+    height: 259px;
+  }
+
+  .about__content {
+    padding: 40px 16px 0px 16px;
+  }
+
+  .about__description {
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 42px;
+  }
+
+  .about__description--text {
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 268px;
+  }
+
+  .about__description--text-background {
+    width: 235px;
+    left: 50px;
+    top: 172px;
+  }
+
+  .about__features {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 0;
+    row-gap: 60px;
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+
+  .features__item {
+    max-width: 321px;
+  }
+
+  .features__item--heading {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .features__item--description {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .about__description--image {
+    display: none;
+  }
+
+  .how-works__text-container {
+    gap: 93px;
+    padding-top: 101px;
+    padding-bottom: 140px;
+  }
+
+  .how-works__text {
+    font-size: 48px;
+    line-height: 51px;
+  }
+
+  .how-works__phone {
+    width: 228px;
+  }
+
+  .statistics {
+    width: auto;
+    height: fit-content;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    padding: 40px 0 40px 16px;
+  }
+
+  .statistics__item {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .statistics__item--amount {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .statistics__item--description {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .space-desktop {
+    display: none;
+  }
+
+  .why-budss__content--heading {
+    margin-top: 80px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .why-budss__content--decription {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+
+  .why-budss__content--decription-background {
+    width: 244px;
+    top: 174px;
+  }
+
+  .why-budss__content--benefits {
+    padding-bottom: 80px;
+  }
+
+  .benefits__first-line {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .benefits__second-line {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .benefits__item {
+    height: auto;
+    padding: 20px 20px 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits__item--big {
+    width: auto;
+  }
+
+  .benefits__item--small {
+    width: auto;
+  }
+
+  .benefits__heading {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 16px;
+    max-width: 305px;
+  }
+
+  .benefits__text {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 300px;
+  }
+
+  .benefits__text--margin {
+    margin: 0;
+  }
+
+  .benefits__item--phone {
+    padding-bottom: 200px;
+  }
+
+  .benefits__item--packages {
+    padding-bottom: 129px;
+  }
+
+  .benefits__item--like {
+    padding-bottom: 115px;
+  }
+
+  .benefits__item--purple {
+    padding-bottom: 191px;
+  }
+
+  .mobile-phone-desktop {
+    display: none;
+  }
+  .phone-mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 193px;
+  }
+
+  .purple-package {
+    width: 61px;
+    top: 221px;
+  }
+
+  .green-package {
+    left: 10px;
+  }
+
+  .yellow-package {
+    right: 115px;
+  }
+
+  .purple-person {
+    width: 143px;
+    bottom: -16px;
+    right: 43px;
+  }
+
+  .contact__content {
+    padding: 0 16px;
+  }
+
+  .contact__block {
+    margin-top: 40px;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    align-items: normal;
+  }
+
+  .contact__block--heading {
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .contact__networks {
+    margin-bottom: 250px;
+  }
+
+  .contact__networks--heading {
+    font-size: 40px;
+    line-height: 42px;
+    margin-left: 0;
+  }
+
+  .contact__networks--text {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 340px;
+    margin-left: 0;
+  }
+
+  .facebook-logo,
+  .twitter-logo,
+  .instagram-logo,
+  .tiktok-logo {
+    display: none;
+  }
+
+  .facebook-logo-mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 220px;
+  }
+  .twitter-logo-mobile {
+    display: block;
+    position: absolute;
+    left: 95px;
+    top: 280px;
+  }
+  .instagram-logo-mobile {
+    display: block;
+    position: absolute;
+    right: 95px;
+    top: 220px;
+  }
+  .tiktok-logo-mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 280px;
+  }
+
+  .partners {
+    width: auto;
+    margin-bottom: 80px;
+    row-gap: 30px;
+  }
+
+  .square {
+    width: 131px;
+  }
+
+  .shopify {
+    width: 149px;
+  }
+
+  .woo-commerce {
+    width: 91px;
+  }
+
+  .squarespace {
+    width: 196px;
+  }
+
+  .clover {
+    width: 128px;
+  }
+
+  .footer {
+    height: 650px;
+    margin: 0;
+    padding: 20px 16px;
+  }
+
+  .footer__top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 0;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #444444;
+  }
+
+  .footer-budss-logo {
+    width: 124px;
+  }
+
+  .footer__tabs {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    margin-right: 0;
+  }
+
+  .footer__tab--mobile {
+    display: block;
+  }
+
+  .footer__bottom--links {
+    display: none;
+  }
+
+  .app-stores {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer__bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer__bottom--copyright {
+    line-height: 21px;
+  }
+
+  .contact-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+    margin: 0 20px;
+  }
+
+  .cookies-modal {
+    bottom: 30px;
+    left: 20px;
+  }
+
+  .cookies-modal__content {
+    width: 295px;
+    margin: 0;
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: normal;
+    gap: 40px;
+    max-width: none;
+  }
+
+  .cookies-modal__text {
+    max-width: 295px;
+  }
+
+  .cookies-modal__buttons {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .success-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+    margin: 0 20px;
+  }
+
+  .success-modal__text {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 295px;
+  }
+}
+
+@media (max-width: 441px) {
+  .why-budss__content--decription-background {
+    top: 202px;
+  }
+}
+
+@media (max-width: 374px) {
+  .cookies-modal__content {
+    width: 240px;
+    margin: 0;
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: normal;
+    gap: 40px;
+    max-width: none;
+  }
+
+  .facebook-logo-mobile {
+    top: 260px;
+  }
+  .twitter-logo-mobile {
+    left: 75px;
+    top: 320px;
+  }
+  .instagram-logo-mobile {
+    right: 75px;
+    top: 260px;
+  }
+  .tiktok-logo-mobile {
+    top: 320px;
+  }
+}

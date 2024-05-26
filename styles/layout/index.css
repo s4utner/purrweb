@@ -79,6 +79,14 @@ a {
   top: 0;
 }
 
+.header__navigation-burger {
+  display: none;
+}
+
+.budss-logo__top--mobile {
+  display: none;
+}
+
 button {
   padding: 14px 28px;
   background-color: #954ced;
@@ -108,6 +116,7 @@ button:focus {
 
 .light-button {
   background-color: #954ced;
+  border: 4px solid #954ced;
 }
 
 .light-button:hover {
@@ -146,7 +155,7 @@ button:focus {
   max-width: 534px;
 }
 
-.hero__content--image {
+.hero__content-image {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -532,8 +541,16 @@ button:focus {
   top: 137px;
 }
 
+.facebook-logo-mobile,
+.twitter-logo-mobile,
+.instagram-logo-mobile,
+.tiktok-logo-mobile {
+  display: none;
+}
+
 .partners {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 1320px;
@@ -567,6 +584,10 @@ button:focus {
   font-size: 20px;
   line-height: 25px;
   transition: all 0.3s;
+}
+
+.footer__tab--mobile {
+  display: none;
 }
 
 .app-stores {
@@ -796,6 +817,67 @@ button:focus {
   margin-top: 4px;
 }
 
+.success-modal__background {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #18181850;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-modal {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.success-modal__img {
+  width: 297px;
+}
+
+.success-modal__heading {
+  font-weight: 600;
+  color: #a64ced;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.success-modal__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  max-width: 345px;
+  text-align: center;
+}
+
 .hide-element {
   display: none;
+}
+
+.success-modal__button {
+  width: 100%;
+  background-color: #954ced;
+}
+
+.success-modal__button:hover {
+  transform: none;
+  background-color: #181818;
+  border-color: #181818;
+}
+
+.success-modal__escape-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
 }

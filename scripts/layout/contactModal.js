@@ -1,9 +1,11 @@
-// Модальное окно
+// Модальные окна
 const contactModal = document.querySelector(".contact-modal__background");
+const successModal = document.querySelector(".success-modal__background");
 
 // Кнопки, открывающие модально окно, и находящаяся в модальном окне
-const modalContactButtons = document.querySelectorAll(".contact-button");
-const modalContactButton = document.querySelector(".contact-modal__button");
+const contactModalButtons = document.querySelectorAll(".contact-button");
+const contactModalButton = document.querySelector(".contact-modal__button");
+const successModalButton = document.querySelector(".success-modal__button");
 
 // Инпуты
 const requiredValueInputs = document.querySelectorAll(".required-value");
@@ -18,19 +20,23 @@ const telInputError = document.querySelector(".tel-error");
 const errorMessage = document.querySelector(".contact-modal__text--requirment");
 
 // Кнопка закрытия модального окна
-const modalEscapeIcon = document.querySelector(".contact-modal__icon");
+const contactModalEscapeIcon = document.querySelector(".contact-modal__icon");
+const successModalEscapeIcon = document.querySelector(
+  ".success-modal__escape-icon"
+);
 
 const sendDataOnButtonClick = () => {
   contactModal.classList.add("hide-element");
+  successModal.classList.remove("hide-element");
 };
 
 const handleButtonClickToSendData = () => {
-  modalContactButton.addEventListener("click", sendDataOnButtonClick);
+  contactModalButton.addEventListener("click", sendDataOnButtonClick);
 };
 
 const errorOnButtonClick = () => {
-  modalContactButton.removeEventListener("click", sendDataOnButtonClick);
-  modalContactButton.addEventListener("click", () => {
+  contactModalButton.removeEventListener("click", sendDataOnButtonClick);
+  contactModalButton.addEventListener("click", () => {
     if (nameInput.value === "") {
       nameInput.classList.add("contact-modal__input--error");
       nameInputError.classList.remove("hide-element");
@@ -60,10 +66,10 @@ const validateInputs = () => {
         telInput.value !== ""
       ) {
         errorMessage.classList.add("hide-element");
-        modalContactButton.classList.remove("button-disabled");
+        contactModalButton.classList.remove("button-disabled");
         handleButtonClickToSendData();
       } else {
-        modalContactButton.classList.add("button-disabled");
+        contactModalButton.classList.add("button-disabled");
       }
 
       if (nameInput.value !== "") {
@@ -101,9 +107,9 @@ const validateInputs = () => {
 };
 
 const openContactModalOnButtonClick = () => {
-  for (const button of modalContactButtons) {
+  for (const button of contactModalButtons) {
     button.addEventListener("click", () => {
-      modalContactButton.classList.add("button-disabled");
+      contactModalButton.classList.add("button-disabled");
       button.classList.add("button-clicked");
       contactModal.classList.remove("hide-element");
 
@@ -111,9 +117,19 @@ const openContactModalOnButtonClick = () => {
     });
   }
 
-  modalEscapeIcon.addEventListener("click", () =>
+  contactModalEscapeIcon.addEventListener("click", () =>
     contactModal.classList.add("hide-element")
   );
 };
 
+const closeSuccessModalOnButtonClick = () => {
+  successModalButton.addEventListener("click", () => {
+    successModal.classList.add("hide-element");
+  });
+  successModalEscapeIcon.addEventListener("click", () => {
+    successModal.classList.add("hide-element");
+  });
+};
+
 openContactModalOnButtonClick();
+closeSuccessModalOnButtonClick();
