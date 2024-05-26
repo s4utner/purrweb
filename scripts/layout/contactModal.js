@@ -1,6 +1,7 @@
 // Модальные окна
 const contactModal = document.querySelector(".contact-modal__background");
 const successModal = document.querySelector(".success-modal__background");
+const burgerMenuModal = document.querySelector(".burger-menu");
 
 // Кнопки, открывающие модально окно, и находящаяся в модальном окне
 const contactModalButtons = document.querySelectorAll(".contact-button");
@@ -112,7 +113,7 @@ const openContactModalOnButtonClick = () => {
       contactModalButton.classList.add("button-disabled");
       button.classList.add("button-clicked");
       contactModal.classList.remove("hide-element");
-
+      burgerMenuModal.classList.add("hide-element");
       validateInputs();
     });
   }

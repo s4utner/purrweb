@@ -4,6 +4,7 @@
 }
 
 body {
+  position: relative;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -77,6 +78,10 @@ a {
 .header__navigation--fixed {
   position: fixed;
   top: 0;
+}
+
+.burger-menu {
+  display: none;
 }
 
 .header__navigation-burger {
