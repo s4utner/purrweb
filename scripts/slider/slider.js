@@ -1,28 +1,53 @@
-const slider = document.querySelector(".slider");
-const prevButton = document.querySelector(".button_prev");
-const nextButton = document.querySelector(".button_next");
 const slides = document.querySelectorAll(".slider__image");
-const breadcrumbsContainer = document.querySelector(".breadcrumbs");
-const slideCount = slides.length;
-const breadcrumbs = [];
-let slideIndex = 0;
+const sliderContainer = document.querySelector(".slides");
+const totalSlides = slides.length;
 
-const updateSlider = () => {
-  slides.forEach((slide, index) => {
-    if (index === slideIndex) {
-      slide.style.display = "block";
-    } else {
-      slide.style.display = "none";
+let currentSlide = 0;
+let isAnimating = false;
+const breadcrumbsArray = [];
+
+const showSlide = (index) => {
+  if (isAnimating) return;
+  isAnimating = true;
+
+  if (index >= totalSlides) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = totalSlides - 1;
+  } else {
+    currentSlide = index;
+  }
+
+  const startShift = -currentSlide * 100;
+  let currentShift =
+    parseFloat(
+      sliderContainer.style.transform
+        .replace("translateX(", "")
+        .replace("%)", "")
+    ) || 0;
+  const shiftStep = (startShift - currentShift) / 50;
+
+  let stepCount = 0;
+  const intervalId = setInterval(() => {
+    currentShift += shiftStep;
+    stepCount += 1;
+    sliderContainer.style.transform = `translateX(${currentShift}%)`;
+
+    if (stepCount >= 50) {
+      clearInterval(intervalId);
+      sliderContainer.style.transform = `translateX(${startShift}%)`;
+      isAnimating = false;
     }
-  });
+  }, 10);
 };
 
 const renderBreadcrumbs = () => {
+  const breadcrumbsContainer = document.querySelector(".breadcrumbs");
   slides.forEach((slide) => {
-    breadcrumbs.push(slide);
+    breadcrumbsArray.push(slide);
   });
 
-  const breadcrumbsHTML = breadcrumbs
+  const breadcrumbsHTML = breadcrumbsArray
     .map((breadcrumb, index) => {
       return `<li class="breadcrumb" data-index="${index}"></li>`;
     })
@@ -31,59 +56,44 @@ const renderBreadcrumbs = () => {
   breadcrumbsContainer.innerHTML = breadcrumbsHTML;
 };
 
-updateSlider();
 renderBreadcrumbs();
 
-const breadcrumbsHTML = document.querySelectorAll(".breadcrumb");
+const breadcrumbs = document.querySelectorAll(".breadcrumb");
+
+const showActiveBreadcrumb = () => {
+  breadcrumbs.forEach((breadcrumb) => {
+    breadcrumb.classList.remove("breadcrumb_active");
+
+    if (Number(breadcrumb.dataset.index) === currentSlide) {
+      breadcrumb.classList.add("breadcrumb_active");
+    }
+  });
+};
 
 const showChoosenSlide = () => {
-  breadcrumbsHTML.forEach((breadcrumb, index) => {
+  breadcrumbs.forEach((breadcrumb, index) => {
     breadcrumb.addEventListener("click", () => {
-      breadcrumb.classList.add("breadcrumb-active");
-      slideIndex = index;
-      updateSlider();
+      currentSlide = index;
+      showSlide(currentSlide);
       showActiveBreadcrumb();
     });
   });
 };
 
-showChoosenSlide();
+const showNextSlide = () => {
+  if (!isAnimating) {
+    showSlide(currentSlide + 1);
+    showActiveBreadcrumb();
+  }
+};
 
 const showPrevSlide = () => {
-  if (slideIndex - 1 >= 0) {
-    slideIndex = slideIndex - 1;
-  } else {
-    slideIndex = slideCount - 1;
+  if (!isAnimating) {
+    showSlide(currentSlide - 1);
+    showActiveBreadcrumb();
   }
-
-  updateSlider();
-  showActiveBreadcrumb();
 };
 
-const showNextSlide = () => {
-  if (slideIndex + 1 < slideCount) {
-    slideIndex = slideIndex + 1;
-  } else {
-    slideIndex = 0;
-  }
-
-  updateSlider();
-  showActiveBreadcrumb();
-};
-
-prevButton.addEventListener("click", showPrevSlide);
-nextButton.addEventListener("click", showNextSlide);
-
-const showActiveBreadcrumb = () => {
-  breadcrumbsHTML.forEach((breadcrumb) => {
-    const breadcrumbIndex = Number(breadcrumb.dataset.index);
-
-    if (breadcrumbIndex === slideIndex) {
-      breadcrumb.classList.add("breadcrumb-active");
-    } else {
-      breadcrumb.classList.remove("breadcrumb-active");
-    }
-  });
-};
-
+showChoosenSlide();
 showActiveBreadcrumb();
+showSlide(currentSlide);
