@@ -78,12 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
     breadcrumbs.forEach((breadcrumb, index) => {
       breadcrumb.classList.remove("breadcrumb_active");
 
-      if ((currentSlide === 1 || currentSlide === 4) && index === 0) {
+      if (
+        (currentSlide === 1 || currentSlide === totalSlides + 1) &&
+        index === 0
+      ) {
         breadcrumb.classList.add("breadcrumb_active");
-        return;
-      } else if (currentSlide === 2 && index === 1) {
+      } else if (
+        (currentSlide === totalSlides || currentSlide === 0) &&
+        index === breadcrumbs.length - 1
+      ) {
         breadcrumb.classList.add("breadcrumb_active");
-      } else if ((currentSlide === 3 || currentSlide === 0) && index === 2) {
+      } else if (currentSlide - 1 === index) {
         breadcrumb.classList.add("breadcrumb_active");
       }
     });
@@ -94,10 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
       breadcrumb.addEventListener("click", () => {
         if (index === 0) {
           currentSlide = 1;
-        } else if (index === 1) {
-          currentSlide = 2;
+        } else if (index === breadcrumbs.length - 1) {
+          currentSlide = totalSlides;
         } else {
-          currentSlide = 3;
+          currentSlide = index + 1;
         }
 
         showSlide(currentSlide);
