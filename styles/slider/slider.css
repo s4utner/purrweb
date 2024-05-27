@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
+  background-color: #181818;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 72px;
+  margin-bottom: 40px;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+}
+
+.slider__image {
+  min-width: 100%;
+}
+
+.button_prev {
+  left: 10px;
+}
+
+.button_next {
+  right: 10px;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  width: 10vw;
+  margin-top: 20px;
+}
+
+.breadcrumb {
+  height: 10px;
+  width: 10px;
+  border-radius: 45px;
+  list-style: none;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.breadcrumb:hover {
+  background-color: #7b31d4;
+}
+
+.breadcrumb_active {
+  background-color: #954ced;
+}

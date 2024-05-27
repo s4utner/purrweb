@@ -31,40 +31,40 @@ a {
   position: relative;
 }
 
-.header__tabs {
+.tabs {
   width: 100%;
   background-color: #ffaa4c;
   height: 38px;
   display: flex;
 }
 
-.header__tabs--container {
+.tabs__container {
   width: 168px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header__tabs--container:first-child {
+.tabs__container:first-child {
   margin-left: 60px;
 }
 
-.tabs__container--active {
+.tabs__container_active {
   border-radius: 20px 20px 0 0;
   background-color: #181818;
 }
 
-.header__tabs--item {
+.tabs__item {
   font-weight: 500;
   font-size: 16px;
   color: #000;
 }
 
-.tabs__item--active {
+.tabs__item_active {
   color: #ffffff;
 }
 
-.header__navigation {
+.top-bar {
   z-index: 2;
   background-color: #181818;
   padding: 10px 60px;
@@ -75,7 +75,7 @@ a {
   align-items: center;
 }
 
-.header__navigation--fixed {
+.top-bar_fixed {
   position: fixed;
   top: 0;
 }
@@ -84,11 +84,11 @@ a {
   display: none;
 }
 
-.header__navigation-burger {
+.top-bar__burger {
   display: none;
 }
 
-.budss-logo__top--mobile {
+.top-logo_mobile {
   display: none;
 }
 
@@ -114,23 +114,23 @@ button:focus {
   border: 2px solid #ba8bf3;
 }
 
-.button-clicked {
+.button_clicked {
   background-color: #7b31d4;
   border-color: #7b31d4;
 }
 
-.light-button {
+.button_light {
   background-color: #954ced;
   border: 4px solid #954ced;
 }
 
-.light-button:hover {
+.button_light:hover {
   transform: scale(1.1);
   background-color: #181818;
   border: 4px solid #181818;
 }
 
-.light-button:focus {
+.button_light:focus {
   background-color: #954ced;
   border: 2px solid #ba8bf3;
 }
@@ -152,7 +152,7 @@ button:focus {
   line-height: 102px;
 }
 
-.hero__content--text {
+.hero__text {
   margin-top: 20px;
   margin-bottom: 40px;
   font-size: 20px;
@@ -160,7 +160,7 @@ button:focus {
   max-width: 534px;
 }
 
-.hero__content-image {
+.hero__image {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -181,14 +181,14 @@ button:focus {
   margin-top: 80px;
 }
 
-.about__description--text {
+.about__text {
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
   max-width: 397px;
 }
 
-.about__description--text-background {
+.about__text_background {
   position: absolute;
   left: 112px;
   top: 377px;
@@ -204,24 +204,24 @@ button:focus {
   padding-bottom: 36px;
 }
 
-.features__item {
+.feature {
   max-width: 336px;
 }
 
-.features__item--heading {
+.feature__heading {
   margin-top: 10px;
   font-weight: 700;
   font-size: 48px;
   line-height: 51px;
 }
 
-.features__item--description {
+.feature__text {
   margin-top: 20px;
   font-size: 24px;
   line-height: 29px;
 }
 
-.about__description--image {
+.about__background-image {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -248,15 +248,15 @@ button:focus {
   line-height: 136px;
 }
 
-.how-works__first-line {
+.how-works__text_first-line {
   animation: slide-right-first 10s linear infinite both;
 }
 
-.how-works__second-line {
+.how-works__text_second-line {
   animation: slide-left 10s linear infinite both;
 }
 
-.how-works__third-line {
+.how-works__text_third-line {
   animation: slide-right-third 10s linear infinite both;
 }
 
@@ -287,19 +287,19 @@ button:focus {
   }
 }
 
-.text-green {
+.how-works__text_green {
   color: #2fdbbc;
 }
 
-.text-purple {
+.how-works__text_purple {
   color: #a64ced;
 }
 
-.text-orange {
+.how-works__text_orange {
   color: #ffaa4c;
 }
 
-.text-transparent {
+.how-works__text_transparent {
   color: transparent;
   -webkit-text-stroke: 1px #444444;
 }
@@ -334,13 +334,13 @@ button:focus {
   gap: 16px;
 }
 
-.statistics__item--amount {
+.statistics__amount {
   font-weight: 700;
   font-size: 64px;
   line-height: 68px;
 }
 
-.statistics__item--description {
+.statistics__text {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
@@ -352,7 +352,7 @@ button:focus {
   align-items: center;
 }
 
-.why-budss__content--heading {
+.why-budss__heading {
   font-weight: 700;
   font-size: 64px;
   line-height: 68px;
@@ -360,7 +360,7 @@ button:focus {
   margin-bottom: 20px;
 }
 
-.why-budss__content--decription {
+.why-budss__text {
   text-align: center;
   font-weight: 600;
   font-size: 36px;
@@ -368,13 +368,13 @@ button:focus {
   margin-bottom: 70px;
 }
 
-.why-budss__content--decription-background {
+.why-budss__text_background {
   position: absolute;
   top: 235px;
   z-index: -1;
 }
 
-.why-budss__content--benefits {
+.benefits {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -402,12 +402,16 @@ button:focus {
   position: relative;
 }
 
-.benefits__item--big {
+.benefits__item_big {
   width: 733px;
 }
 
-.benefits__item--small {
+.benefits__item_small {
   width: 547px;
+}
+
+.phone-img_mobile {
+  display: none;
 }
 
 .benefits__text-container {
@@ -432,7 +436,7 @@ button:focus {
   max-width: 334px;
 }
 
-.benefits__text--margin {
+.benefits__text_margin {
   margin-left: 40px;
 }
 
@@ -454,7 +458,7 @@ button:focus {
   right: 60px;
 }
 
-.green-like {
+.like-img {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -478,7 +482,7 @@ button:focus {
   align-items: center;
 }
 
-.contact__block {
+.contact__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -490,7 +494,7 @@ button:focus {
   margin-bottom: 100px;
 }
 
-.contact__block--heading {
+.contact__heading {
   color: #000;
   font-weight: 700;
   font-size: 64px;
@@ -498,13 +502,13 @@ button:focus {
   margin-bottom: 40px;
 }
 
-.contact__networks {
+.networks {
   width: 100%;
   margin-bottom: 100px;
   position: relative;
 }
 
-.contact__networks--heading {
+.networks__heading {
   color: #000;
   font-weight: 700;
   font-size: 96px;
@@ -513,7 +517,7 @@ button:focus {
   margin-left: 60px;
 }
 
-.contact__networks--text {
+.networks__text {
   color: #000;
   font-size: 20px;
   line-height: 24px;
@@ -546,10 +550,10 @@ button:focus {
   top: 137px;
 }
 
-.facebook-logo-mobile,
-.twitter-logo-mobile,
-.instagram-logo-mobile,
-.tiktok-logo-mobile {
+.facebook-logo_mobile,
+.twitter-logo_mobile,
+.instagram-logo_mobile,
+.tiktok-logo_mobile {
   display: none;
 }
 
@@ -591,7 +595,7 @@ button:focus {
   transition: all 0.3s;
 }
 
-.footer__tab--mobile {
+.footer__tab_mobile {
   display: none;
 }
 
@@ -607,19 +611,19 @@ button:focus {
   padding: 20px 0;
 }
 
-.footer__bottom--copyright {
+.footer__copyright {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
   color: #b9b9b9;
 }
 
-.footer__bottom--links {
+.footer__links {
   display: flex;
   gap: 20px;
 }
 
-.footer-link {
+.footer__link {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -628,7 +632,7 @@ button:focus {
   transition: all 0.3s;
 }
 
-.footer-link:hover {
+.footer__link:hover {
   color: #ffffff;
 }
 
@@ -667,17 +671,17 @@ button:focus {
   margin-right: 60px;
 }
 
-.cookies-modal__buttons--accept:hover {
+.cookies-modal__button_accept:hover {
   transform: none;
   border-color: #000;
 }
 
-.cookies-modal__buttons--decline {
+.cookies-modal__button_decline {
   color: #000;
   background-color: #ffffff;
 }
 
-.cookies-modal__buttons--decline:hover {
+.cookies-modal__button_decline:hover {
   transform: none;
   border-color: #000;
   background-color: #000;
@@ -719,14 +723,14 @@ button:focus {
   position: relative;
 }
 
-.contact-modal__input--name {
+.contact-modal__name {
   font-weight: 500;
   color: #000;
   font-size: 14px;
   line-height: 22px;
 }
 
-.required {
+.required-input {
   color: red;
 }
 
@@ -741,15 +745,15 @@ button:focus {
   line-height: 22px;
 }
 
-.tel-input {
+.input_phone {
   padding-left: 40px;
 }
 
-.contact-modal__input--error {
+.contact-modal__input_error {
   border: 1px solid #ec1211;
 }
 
-.contact-modal__input--flag {
+.contact-modal__input_flag {
   position: absolute;
   top: 39px;
   left: 16px;
@@ -765,7 +769,7 @@ button:focus {
   margin-bottom: 20px;
 }
 
-.contact-modal__text--requirment {
+.contact-modal__text_requirment {
   color: #ec1211;
   font-size: 16px;
   line-height: 20px;
@@ -804,17 +808,17 @@ button:focus {
   border-color: #181818;
 }
 
-.button-disabled {
+.button_disabled {
   background-color: #b9b9b9;
   border-color: #b9b9b9;
 }
 
-.button-disabled:hover {
+.button_disabled:hover {
   background-color: #b9b9b9;
   border-color: #b9b9b9;
 }
 
-.input-error {
+.input_error {
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
@@ -865,10 +869,6 @@ button:focus {
   text-align: center;
 }
 
-.hide-element {
-  display: none;
-}
-
 .success-modal__button {
   width: 100%;
   background-color: #954ced;
@@ -885,4 +885,12 @@ button:focus {
   top: 16px;
   right: 16px;
   cursor: pointer;
+}
+
+.hide-element {
+  display: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
