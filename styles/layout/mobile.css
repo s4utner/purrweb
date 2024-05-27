@@ -1,5 +1,5 @@
 @media (max-width: 1330px) {
-  .header__tabs--container:first-child {
+  .tabs__container:first-child {
     margin: 0;
   }
 
@@ -7,35 +7,35 @@
     width: fit-content;
   }
 
-  .header__navigation {
+  .top-bar {
     padding: 10px 16px;
   }
 
-  .budss-logo__top--desktop {
+  .top-logo {
     display: none;
   }
 
-  .budss-logo__top--mobile {
+  .top-logo_mobile {
     display: block;
   }
 
-  .header__navigation-button {
+  .top-bar__button {
     display: none;
   }
 
-  .header__navigation-burger {
+  .top-bar__burger {
     padding: 0;
     display: block;
     background-color: transparent;
     border: none;
   }
 
-  .header__navigation-burger:focus {
+  .top-bar__burger:focus {
     transform: none;
     border: none;
   }
 
-  .header__navigation-burger:hover {
+  .top-bar__burger:hover {
     transform: none;
   }
 
@@ -55,12 +55,12 @@
     line-height: 42px;
   }
 
-  .hero__content--text {
+  .hero__text {
     font-size: 16px;
     line-height: 20px;
   }
 
-  .hero__content-image {
+  .hero__image {
     height: 259px;
   }
 
@@ -75,13 +75,13 @@
     gap: 42px;
   }
 
-  .about__description--text {
+  .about__text {
     font-size: 24px;
     line-height: 29px;
     max-width: 268px;
   }
 
-  .about__description--text-background {
+  .about__text_background {
     width: 235px;
     left: 50px;
     top: 172px;
@@ -96,22 +96,22 @@
     padding-bottom: 40px;
   }
 
-  .features__item {
+  .feature {
     max-width: 321px;
   }
 
-  .features__item--heading {
+  .feature__heading {
     font-size: 32px;
     line-height: 34px;
   }
 
-  .features__item--description {
+  .feature__text {
     margin-top: 16px;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .about__description--image {
+  .about__background-image {
     display: none;
   }
 
@@ -145,37 +145,37 @@
     align-items: center;
   }
 
-  .statistics__item--amount {
+  .statistics__amount {
     font-size: 40px;
     line-height: 42px;
   }
 
-  .statistics__item--description {
+  .statistics__text {
     font-size: 20px;
     line-height: 25px;
   }
-  .space-desktop {
+  .space_desktop {
     display: none;
   }
 
-  .why-budss__content--heading {
+  .why-budss__heading {
     margin-top: 80px;
     font-size: 40px;
     line-height: 42px;
   }
 
-  .why-budss__content--decription {
+  .why-budss__text {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 40px;
   }
 
-  .why-budss__content--decription-background {
+  .why-budss__text_background {
     width: 244px;
     top: 174px;
   }
 
-  .why-budss__content--benefits {
+  .benefits {
     padding-bottom: 80px;
   }
 
@@ -196,11 +196,11 @@
     align-items: center;
   }
 
-  .benefits__item--big {
+  .benefits__item_big {
     width: auto;
   }
 
-  .benefits__item--small {
+  .benefits__item_small {
     width: auto;
   }
 
@@ -219,30 +219,32 @@
     max-width: 300px;
   }
 
-  .benefits__text--margin {
+  .benefits__text_margin {
     margin: 0;
   }
 
-  .benefits__item--phone {
+  .benefits__item_phone {
     padding-bottom: 200px;
   }
 
-  .benefits__item--packages {
+  .benefits__item_packages {
     padding-bottom: 129px;
   }
 
-  .benefits__item--like {
+  .benefits__item_like {
     padding-bottom: 115px;
   }
 
-  .benefits__item--purple {
+  .benefits__item_purple {
     padding-bottom: 191px;
   }
 
-  .mobile-phone-desktop {
+  .phone-img_desktop {
     display: none;
   }
-  .phone-mobile {
+
+  .phone-img_mobile {
+    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -272,31 +274,31 @@
     padding: 0 16px;
   }
 
-  .contact__block {
+  .contact__form {
     margin-top: 40px;
     padding: 40px 20px;
     margin-bottom: 40px;
     align-items: normal;
   }
 
-  .contact__block--heading {
+  .contact__heading {
     font-size: 40px;
     line-height: 42px;
     margin-bottom: 40px;
     text-align: center;
   }
 
-  .contact__networks {
+  .networks {
     margin-bottom: 250px;
   }
 
-  .contact__networks--heading {
+  .networks__heading {
     font-size: 40px;
     line-height: 42px;
     margin-left: 0;
   }
 
-  .contact__networks--text {
+  .networks__text {
     font-size: 20px;
     line-height: 24px;
     max-width: 340px;
@@ -310,25 +312,25 @@
     display: none;
   }
 
-  .facebook-logo-mobile {
+  .facebook-logo_mobile {
     display: block;
     position: absolute;
     left: 0;
     top: 220px;
   }
-  .twitter-logo-mobile {
+  .twitter-logo_mobile {
     display: block;
     position: absolute;
     left: 95px;
     top: 280px;
   }
-  .instagram-logo-mobile {
+  .instagram-logo_mobile {
     display: block;
     position: absolute;
     right: 95px;
     top: 220px;
   }
-  .tiktok-logo-mobile {
+  .tiktok-logo_mobile {
     display: block;
     position: absolute;
     right: 0;
@@ -376,7 +378,7 @@
     border-bottom: 2px solid #444444;
   }
 
-  .footer-budss-logo {
+  .logo {
     width: 124px;
   }
 
@@ -389,11 +391,11 @@
     margin-right: 0;
   }
 
-  .footer__tab--mobile {
+  .footer__tab_mobile {
     display: block;
   }
 
-  .footer__bottom--links {
+  .footer__links {
     display: none;
   }
 
@@ -409,7 +411,7 @@
     padding-bottom: 20px;
   }
 
-  .footer__bottom--copyright {
+  .footer__copyright {
     line-height: 21px;
   }
 
@@ -509,7 +511,7 @@
 }
 
 @media (max-width: 441px) {
-  .why-budss__content--decription-background {
+  .why-budss__text_background {
     top: 202px;
   }
 }
@@ -525,18 +527,18 @@
     max-width: none;
   }
 
-  .facebook-logo-mobile {
+  .facebook-logo_mobile {
     top: 260px;
   }
-  .twitter-logo-mobile {
+  .twitter-logo_mobile {
     left: 75px;
     top: 320px;
   }
-  .instagram-logo-mobile {
+  .instagram-logo_mobile {
     right: 75px;
     top: 260px;
   }
-  .tiktok-logo-mobile {
+  .tiktok-logo_mobile {
     top: 320px;
   }
 }

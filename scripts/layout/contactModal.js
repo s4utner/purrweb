@@ -10,15 +10,15 @@ const successModalButton = document.querySelector(".success-modal__button");
 
 // Инпуты
 const requiredValueInputs = document.querySelectorAll(".required-value");
-const nameInput = document.querySelector(".name-input");
-const emailInput = document.querySelector(".email-input");
-const telInput = document.querySelector(".tel-input");
+const nameInput = document.querySelector(".input_name");
+const emailInput = document.querySelector(".input_email");
+const telInput = document.querySelector(".input_phone");
 
 // Ошибки инпутов
-const nameInputError = document.querySelector(".name-error");
-const emailInputError = document.querySelector(".email-error");
-const telInputError = document.querySelector(".tel-error");
-const errorMessage = document.querySelector(".contact-modal__text--requirment");
+const nameInputError = document.querySelector(".error_name");
+const emailInputError = document.querySelector(".error_email");
+const telInputError = document.querySelector(".error_tel");
+const errorMessage = document.querySelector(".contact-modal__text_requirment ");
 
 // Кнопка закрытия модального окна
 const contactModalEscapeIcon = document.querySelector(".contact-modal__icon");
@@ -39,19 +39,19 @@ const errorOnButtonClick = () => {
   contactModalButton.removeEventListener("click", sendDataOnButtonClick);
   contactModalButton.addEventListener("click", () => {
     if (nameInput.value === "") {
-      nameInput.classList.add("contact-modal__input--error");
+      nameInput.classList.add("contact-modal__input_error");
       nameInputError.classList.remove("hide-element");
       errorMessage.classList.remove("hide-element");
     }
 
     if (emailInput.value === "") {
-      emailInput.classList.add("contact-modal__input--error");
+      emailInput.classList.add("contact-modal__input_error");
       emailInputError.classList.remove("hide-element");
       errorMessage.classList.remove("hide-element");
     }
 
     if (telInput.value === "") {
-      telInput.classList.add("contact-modal__input--error");
+      telInput.classList.add("contact-modal__input_error");
       telInputError.classList.remove("hide-element");
       errorMessage.classList.remove("hide-element");
     }
@@ -67,25 +67,25 @@ const validateInputs = () => {
         telInput.value !== ""
       ) {
         errorMessage.classList.add("hide-element");
-        contactModalButton.classList.remove("button-disabled");
+        contactModalButton.classList.remove("button_disabled");
         handleButtonClickToSendData();
       } else {
-        contactModalButton.classList.add("button-disabled");
+        contactModalButton.classList.add("button_disabled");
       }
 
       if (nameInput.value !== "") {
         nameInputError.classList.add("hide-element");
-        nameInput.classList.remove("contact-modal__input--error");
+        nameInput.classList.remove("contact-modal__input_error");
       }
 
       if (emailInput.value !== "") {
         emailInputError.classList.add("hide-element");
-        emailInput.classList.remove("contact-modal__input--error");
+        emailInput.classList.remove("contact-modal__input_error");
       }
 
       if (telInput.value !== "") {
         telInputError.classList.add("hide-element");
-        telInput.classList.remove("contact-modal__input--error");
+        telInput.classList.remove("contact-modal__input_error");
       }
 
       if (
@@ -110,8 +110,8 @@ const validateInputs = () => {
 const openContactModalOnButtonClick = () => {
   for (const button of contactModalButtons) {
     button.addEventListener("click", () => {
-      contactModalButton.classList.add("button-disabled");
-      button.classList.add("button-clicked");
+      contactModalButton.classList.add("button_disabled");
+      button.classList.add("button_clicked");
       contactModal.classList.remove("hide-element");
       burgerMenuModal.classList.add("hide-element");
       validateInputs();

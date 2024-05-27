@@ -84,8 +84,6 @@ const showActiveBreadcrumb = () => {
       breadcrumb.classList.remove("breadcrumb-active");
     }
   });
-
-  console.log("Я выполнился");
 };
 
 showActiveBreadcrumb();

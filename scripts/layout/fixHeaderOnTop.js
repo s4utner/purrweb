@@ -1,11 +1,11 @@
-const header = document.querySelector(".header__navigation");
+const header = document.querySelector(".top-bar");
 const headerPosition = header.offsetTop;
 
 const handleHeaderOnTop = () => {
   if (window.pageYOffset > headerPosition) {
-    header.classList.add("header__navigation--fixed");
+    header.classList.add("top-bar_fixed");
   } else {
-    header.classList.remove("header__navigation--fixed");
+    header.classList.remove("top-bar_fixed");
   }
 };
 

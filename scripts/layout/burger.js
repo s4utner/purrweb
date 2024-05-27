@@ -1,4 +1,4 @@
-const burgerIcon = document.querySelector(".header__navigation-burger");
+const burgerIcon = document.querySelector(".top-bar__burger");
 const burgerMenu = document.querySelector(".burger-menu");
 const closeBurgerMenuIcon = document.querySelector(".burger-menu__icon");
 

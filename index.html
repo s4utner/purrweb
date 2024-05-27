@@ -16,36 +16,32 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__tabs">
-        <div class="header__tabs--container tabs__container--active">
-          <a href="#" class="header__tabs--item tabs__item--active"
-            >For Business</a
-          >
+      <nav class="tabs">
+        <div class="tabs__container tabs__container_active">
+          <a href="#" class="tabs__item tabs__item_active">For Business</a>
         </div>
-        <div class="header__tabs--container">
-          <a href="#" class="header__tabs--item">For Customers</a>
+        <div class="tabs__container">
+          <a href="#" class="tabs__item">For Customers</a>
         </div>
       </nav>
-      <div class="header__navigation">
-        <a href="#" class="header__logo">
+      <nav class="top-bar">
+        <a href="#">
           <img
-            class="budss-logo__top--desktop"
+            class="top-logo"
             src="./img/layout/budss-logo.svg"
             alt="budss logo"
           />
           <img
-            class="budss-logo__top--mobile"
+            class="top-logo_mobile"
             src="./img/layout/budss-logo-mobile.svg"
             alt="budss logo"
           />
         </a>
-        <button class="contact-button header__navigation-button">
-          Contact sales
-        </button>
-        <button class="header__navigation-burger">
+        <button class="contact-button top-bar__button">Contact sales</button>
+        <button class="top-bar__burger">
           <img src="./img/layout/Burger.svg" alt="burger menu" />
         </button>
-      </div>
+      </nav>
     </header>
     <section class="hero">
       <div class="hero__content">
@@ -53,13 +49,13 @@
           Everyone <br />
           is an Influencer
         </h1>
-        <p class="hero__content--text">
+        <p class="hero__text">
           Budss is a payments as a service and WOM engine dedicated to
           acquisition and retention of customers to your business.
         </p>
         <button class="contact-button">Contact sales</button>
         <img
-          class="hero__content-image"
+          class="hero__image"
           src="./img/layout/budss-hero.svg"
           alt="budss hero image"
         />
@@ -69,58 +65,58 @@
       <div class="about__content">
         <h2 class="title">About Budss</h2>
         <div class="about__description">
-          <p class="about__description--text">
+          <p class="about__text">
             Payment as a service, powered seamlessly by our network of shoppers
           </p>
           <img
-            class="about__description--text-background"
+            class="about__text_background"
             src="./img/layout/about-text-background.svg"
             alt="text background image"
           />
           <div class="about__features">
-            <div class="features__item">
+            <div class="feature">
               <img
-                class="features__item--logo"
+                class="feature__logo"
                 src="./img/layout/star.svg"
                 alt="star image"
               />
-              <p class="features__item--heading">Contactless</p>
-              <p class="features__item--description">
+              <p class="feature__heading">Contactless</p>
+              <p class="feature__text">
                 Budss uses near field communication (NFC) for making contactless
                 payments.
               </p>
             </div>
-            <div class="features__item">
+            <div class="feature">
               <img
-                class="features__item--logo"
+                class="feature__logo"
                 src="./img/layout/power.svg"
                 alt="star image"
               />
-              <p class="features__item--heading">Increased Buying Power</p>
-              <p class="features__item--description">
+              <p class="feature__heading">Increased Buying Power</p>
+              <p class="feature__text">
                 Returning customers spend up to 3X more.
               </p>
             </div>
-            <div class="features__item">
+            <div class="feature">
               <img
-                class="features__item--logo"
+                class="feature__logo"
                 src="./img/layout/waves.svg"
                 alt="star image"
               />
-              <p class="features__item--heading">Analytics & Insights</p>
-              <p class="features__item--description">
+              <p class="feature__heading">Analytics & Insights</p>
+              <p class="feature__text">
                 Gain a holistic view into your customers' buying behavior &
                 purchasing patterns.
               </p>
             </div>
-            <div class="features__item">
+            <div class="feature">
               <img
-                class="features__item--logo"
+                class="feature__logo"
                 src="./img/layout/protection.svg"
                 alt="star image"
               />
-              <p class="features__item--heading">Fraud Protection</p>
-              <p class="features__item--description">
+              <p class="feature__heading">Fraud Protection</p>
+              <p class="feature__text">
                 Budss handles all payments with a fraud prevention algorithm to
                 flag high risk purchases & a user set PIN code to keep payment
                 info secure.
@@ -128,7 +124,7 @@
             </div>
           </div>
           <img
-            class="about__description--image"
+            class="about__background-image"
             src="./img/layout/about-image.svg"
             alt="letter b image"
           />
@@ -138,21 +134,27 @@
     <div class="how-works">
       <div class="how-works__content">
         <div class="how-works__text-container">
-          <p class="how-works__text how-works__first-line text-green">
+          <p
+            class="how-works__text how-works__text_green how-works__text_first-line"
+          >
             How Budss Works
-            <span class="how-works__text text-transparent"
+            <span class="how-works__text how-works__text_transparent"
               >How Budss Works</span
             >
           </p>
-          <p class="how-works__text how-works__second-line text-purple">
-            <span class="how-works__text text-transparent"
+          <p
+            class="how-works__text how-works__text_purple how-works__text_second-line"
+          >
+            <span class="how-works__text how-works__text_transparent"
               >How Budss Works</span
             >
             How Budss Works
           </p>
-          <p class="how-works__text how-works__third-line text-orange">
+          <p
+            class="how-works__text how-works__text_orange how-works__text_third-line"
+          >
             How Budss Works
-            <span class="how-works__text text-transparent"
+            <span class="how-works__text how-works__text_transparent"
               >How Budss Works</span
             >
           </p>
@@ -166,23 +168,23 @@
     </div>
     <div class="statistics">
       <div class="statistics__item">
-        <p class="statistics__item--amount">15%</p>
-        <p class="statistics__item--description">
-          Increase <br class="space-desktop" />
+        <p class="statistics__amount">15%</p>
+        <p class="statistics__text">
+          Increase <br class="space_desktop" />
           in Purchase Amount
         </p>
       </div>
       <div class="statistics__item">
-        <p class="statistics__item--amount">30%</p>
-        <p class="statistics__item--description">
-          Growth <br class="space-desktop" />
+        <p class="statistics__amount">30%</p>
+        <p class="statistics__text">
+          Growth <br class="space_desktop" />
           in Annual Sales
         </p>
       </div>
       <div class="statistics__item">
-        <p class="statistics__item--amount">10%</p>
-        <p class="statistics__item--description">
-          Growth in New <br class="space-desktop" />
+        <p class="statistics__amount">10%</p>
+        <p class="statistics__text">
+          Growth in New <br class="space_desktop" />
           Customers
         </p>
       </div>
@@ -190,29 +192,29 @@
     <section class="why-budss">
       <div class="container">
         <div class="why-budss__content">
-          <h3 class="why-budss__content--heading">Why Budss</h3>
-          <p class="why-budss__content--decription">
+          <h3 class="why-budss__heading">Why Budss</h3>
+          <p class="why-budss__text">
             We Provide Advanced Payment Solutions <br />
             To Grow Your Business
           </p>
           <img
-            class="why-budss__content--decription-background"
+            class="why-budss__text_background"
             src="./img/layout/why-text-background.svg"
             alt="text background"
           />
-          <div class="why-budss__content--benefits">
+          <div class="benefits">
             <div class="benefits__first-line">
               <div
-                class="benefits__item benefits__item--big benefits__item--phone"
+                class="benefits__item benefits__item_big benefits__item_phone"
               >
                 <img
-                  class="mobile-phone-desktop"
+                  class="phone-img_desktop"
                   src="./img/layout/benefits-mobile.svg"
                   alt="benefits mobile image"
                 />
                 <img
-                  class="phone-mobile"
-                  src="./img/layout/phone-mobile.svg"
+                  class="phone-img_mobile"
+                  src="./img/layout/phone-img_mobile.svg"
                   alt="benefits mobile image"
                 />
                 <div class="benefits__text-container">
@@ -226,7 +228,7 @@
                 </div>
               </div>
               <div
-                class="benefits__item benefits__item--small benefits__item--packages"
+                class="benefits__item benefits__item_small benefits__item_packages"
               >
                 <img
                   class="purple-package"
@@ -243,7 +245,7 @@
                   src="./img/layout/yellow-package.svg"
                   alt="yellow package image"
                 />
-                <div class="benefits__text-container benefits__text--margin">
+                <div class="benefits__text-container benefits__text_margin">
                   <p class="benefits__heading">
                     Harness the power of buying in bulk
                   </p>
@@ -257,14 +259,14 @@
             </div>
             <div class="benefits__second-line">
               <div
-                class="benefits__item benefits__item--small benefits__item--like"
+                class="benefits__item benefits__item_small benefits__item_like"
               >
                 <img
-                  class="green-like"
+                  class="like-img"
                   src="./img/layout/why-like.svg"
                   alt="green person likes"
                 />
-                <div class="benefits__text-container benefits__text--margin">
+                <div class="benefits__text-container benefits__text_margin">
                   <p class="benefits__heading">
                     Supercharge Loyalty With Instant Cash Back
                   </p>
@@ -275,14 +277,14 @@
                 </div>
               </div>
               <div
-                class="benefits__item benefits__item--big benefits__item--purple"
+                class="benefits__item benefits__item_big benefits__item_purple"
               >
                 <img
                   class="purple-person"
                   src="./img/layout/purple-person.svg"
                   alt="purple person with mobile image"
                 />
-                <div class="benefits__text-container benefits__text--margin">
+                <div class="benefits__text-container benefits__text_margin">
                   <p class="benefits__heading">
                     Seasoned with AI and Gamification
                   </p>
@@ -301,40 +303,38 @@
     <section class="contact">
       <div class="container">
         <div class="contact__content">
-          <div class="contact__block">
-            <h4 class="contact__block--heading">Let Your Business Grow</h4>
-            <button class="light-button contact-button">Contact sales</button>
+          <div class="contact__form">
+            <h4 class="contact__heading">Let Your Business Grow</h4>
+            <button class="button_light contact-button">Contact sales</button>
           </div>
-          <div class="contact__networks">
-            <p class="contact__networks--heading">
-              Your Brand Awareness Maters
-            </p>
-            <p class="contact__networks--text">
+          <div class="networks">
+            <p class="networks__heading">Your Brand Awareness Maters</p>
+            <p class="networks__text">
               Budss is a husle free solution to put your brand on any digital
               surface including Instagram, Facebook, Twitter and TikTok
             </p>
             <a href="#" class="facebook-logo">
               <img src="./img/layout/facebook.svg" alt="facebook logo" />
             </a>
-            <a href="#" class="facebook-logo-mobile">
+            <a href="#" class="facebook-logo_mobile">
               <img src="./img/layout/facebook-mobile.svg" alt="facebook logo" />
             </a>
             <a href="#" class="twitter-logo">
               <img src="./img/layout/twitter.svg" alt="twitter logo" />
             </a>
-            <a href="#" class="twitter-logo-mobile">
+            <a href="#" class="twitter-logo_mobile">
               <img src="./img/layout/twitter-mobile.svg" alt="twitter logo" />
             </a>
             <a href="#" class="instagram-logo">
               <img src="./img/layout/instagram.svg" alt="instagram logo" />
             </a>
-            <a href="#" class="instagram-logo-mobile">
+            <a href="#" class="instagram-logo_mobile">
               <img src="./img/layout/inst-mobile.svg" alt="instagram logo" />
             </a>
             <a href="#" class="tiktok-logo">
               <img src="./img/layout/tik-tok.svg" alt="tik tok logo" />
             </a>
-            <a href="#" class="tiktok-logo-mobile">
+            <a href="#" class="tiktok-logo_mobile">
               <img src="./img/layout/tik-tok-mobile.svg" alt="tik tok logo" />
             </a>
           </div>
@@ -381,18 +381,18 @@
       <div class="footer__top">
         <a href="#"
           ><img
-            class="footer-budss-logo"
+            class="logo"
             src="./img/layout/budss-footer-logo.svg"
             alt="budss logo"
         /></a>
         <nav class="footer__tabs">
           <a class="footer__tab" href="#">For Business</a>
           <a class="footer__tab" href="#">For Customers</a>
-          <a class="footer__tab footer__tab--mobile" href="#">Privacy Policy</a>
-          <a class="footer__tab footer__tab--mobile" href="#"
+          <a class="footer__tab footer__tab_mobile" href="#">Privacy Policy</a>
+          <a class="footer__tab footer__tab_mobile" href="#"
             >Terms Of Use - Seller</a
           >
-          <a class="footer__tab footer__tab--mobile" href="#"
+          <a class="footer__tab footer__tab_mobile" href="#"
             >Terms of Use - Sellers & Customers</a
           >
         </nav>
@@ -407,13 +407,15 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__bottom--copyright">
+        <p class="footer__copyright">
           © Copyright 2023, All Rights Reserved by Budss
         </p>
-        <div class="footer__bottom--links">
-          <a class="footer-link" href="#">Privacy Policy</a>
-          <a class="footer-link" href="#">Terms Of Use - Seller</a>
-          <a class="footer-link" href="#">Terms of Use - Sellers & Customers</a>
+        <div class="footer__links">
+          <a class="footer__link" href="#">Privacy Policy</a>
+          <a class="footer__link" href="#">Terms Of Use - Seller</a>
+          <a class="footer__link" href="#"
+            >Terms of Use - Sellers & Customers</a
+          >
         </div>
       </div>
     </footer>
@@ -425,10 +427,10 @@
           constantly improve the website for you.
         </p>
         <div class="cookies-modal__buttons">
-          <button class="cookies-modal__button cookies-modal__buttons--accept">
+          <button class="cookies-modal__button cookies-modal__button_accept">
             Accept
           </button>
-          <button class="cookies-modal__button cookies-modal__buttons--decline">
+          <button class="cookies-modal__button cookies-modal__button_decline">
             Decline
           </button>
         </div>
@@ -442,54 +444,54 @@
     <aside class="contact-modal__background hide-element">
       <div class="contact-modal">
         <div class="contact-modal__container">
-          <p class="contact-modal__input--name">
-            Name <span class="required">*</span>
+          <p class="contact-modal__name">
+            Name <span class="required-input">*</span>
           </p>
           <input
-            class="contact-modal__input name-input required-value"
+            class="contact-modal__input input_name required-value"
             type="text"
             placeholder="Enter name"
             value=""
           />
-          <p class="input-error name-error hide-element">
+          <p class="input_error error_name hide-element">
             This field is required.
           </p>
         </div>
         <div class="contact-modal__container">
-          <p class="contact-modal__input--name">
-            Email <span class="required">*</span>
+          <p class="contact-modal__name">
+            Email <span class="required-input">*</span>
           </p>
           <input
-            class="contact-modal__input email-input required-value"
+            class="contact-modal__input input_email required-value"
             type="email"
             placeholder="Enter email"
             value=""
           />
-          <p class="input-error email-error hide-element">
+          <p class="input_error error_email hide-element">
             This field is required.
           </p>
         </div>
         <div class="contact-modal__container">
-          <p class="contact-modal__input--name">
-            Phone number <span class="required">*</span>
+          <p class="contact-modal__name">
+            Phone number <span class="required-input">*</span>
           </p>
           <input
-            class="contact-modal__input tel-input required-value"
+            class="contact-modal__input input_phone required-value"
             type="tel"
             placeholder="+ 1 900 000 00 00 "
             value=""
           />
-          <p class="input-error tel-error hide-element">
+          <p class="input_error error_tel hide-element">
             This field is required.
           </p>
           <img
-            class="contact-modal__input--flag"
+            class="contact-modal__input_flag"
             src="./img/layout/united-states-of-america.svg"
             alt="united states of america"
           />
         </div>
         <div class="contact-modal__container">
-          <p class="contact-modal__input--name">Company</p>
+          <p class="contact-modal__name">Company</p>
           <input
             class="contact-modal__input"
             type="text"
@@ -497,14 +499,14 @@
           />
         </div>
         <div class="contact-modal__container">
-          <p class="contact-modal__input--name">Website/Store URL</p>
+          <p class="contact-modal__name">Website/Store URL</p>
           <input
             class="contact-modal__input"
             type="text"
             placeholder="Enter Website/Store URL"
           />
         </div>
-        <p class="contact-modal__text--requirment hide-element">
+        <p class="contact-modal__text_requirment hide-element">
           Please fill in all required fields
         </p>
         <p class="contact-modal__text">
@@ -548,7 +550,9 @@
           src="./img/layout/close-burger-icon.svg"
           alt="close burger icon"
         />
-        <button class="burger-menu__button contact-button">Contact sales</button>
+        <button class="burger-menu__button contact-button">
+          Contact sales
+        </button>
         <nav class="burger-menu__links">
           <a class="burger-menu__link" href="#">For Business</a>
           <a class="burger-menu__link" href="#">For Customers</a>
