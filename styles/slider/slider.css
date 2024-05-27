@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
+  background-color: #181818;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 72px;
+  margin-bottom: 32px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.slider {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.button {
+  margin: 0 40px;
+  color: #ffffff;
+  background-color: #181818;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 72px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  color: #954ced;
+}
+
+.slider-breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  width: 10vw;
+  margin-top: 20px;
+}
+
+.breadcrumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 45px;
+  list-style: none;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.breadcrumb:hover {
+  background-color: #7b31d4;
+}
+
+.breadcrumb-active {
+  background-color: #954ced;
+}
