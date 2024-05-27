@@ -110,6 +110,7 @@ const validateInputs = () => {
 const openContactModalOnButtonClick = () => {
   for (const button of contactModalButtons) {
     button.addEventListener("click", () => {
+      body.classList.add("no-scroll");
       contactModalButton.classList.add("button_disabled");
       button.classList.add("button_clicked");
       contactModal.classList.remove("hide-element");
@@ -118,16 +119,19 @@ const openContactModalOnButtonClick = () => {
     });
   }
 
-  contactModalEscapeIcon.addEventListener("click", () =>
-    contactModal.classList.add("hide-element")
-  );
+  contactModalEscapeIcon.addEventListener("click", () => {
+    body.classList.remove("no-scroll");
+    contactModal.classList.add("hide-element");
+  });
 };
 
 const closeSuccessModalOnButtonClick = () => {
   successModalButton.addEventListener("click", () => {
+    body.classList.remove("no-scroll");
     successModal.classList.add("hide-element");
   });
   successModalEscapeIcon.addEventListener("click", () => {
+    body.classList.remove("no-scroll");
     successModal.classList.add("hide-element");
   });
 };

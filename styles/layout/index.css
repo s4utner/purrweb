@@ -869,10 +869,6 @@ button:focus {
   text-align: center;
 }
 
-.hide-element {
-  display: none;
-}
-
 .success-modal__button {
   width: 100%;
   background-color: #954ced;
@@ -889,4 +885,12 @@ button:focus {
   top: 16px;
   right: 16px;
   cursor: pointer;
+}
+
+.hide-element {
+  display: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
